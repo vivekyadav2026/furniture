@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -204,84 +204,75 @@
   
 
 
+  
+  <!-- HERO SECTION — Immersive Luxury Editorial -->
+  <section class="hero-section relative min-h-screen flex items-center overflow-hidden bg-black" style="padding-top:0;">
 
-  <!-- HERO SECTION — Premium Editorial Split -->
-  <section class="hero-section relative min-h-screen flex overflow-hidden bg-[#F5F2ED]" style="padding-top:0;">
+    <!-- Full-Bleed Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img src="assets/img/hero_bg.png" alt="FurnishHut Grand Luxury Living Space" class="w-full h-full object-cover object-center lg:object-right">
+      
+      <!-- Seamless Soft Fade Gradient (Left to Right) for Text Readability -->
+      <div class="absolute inset-0 bg-gradient-to-r from-[#FDFBF7] via-[#FDFBF7]/70 to-transparent lg:w-[65%] w-[90%]"></div>
+      
+      <!-- Subtle Dark Vignette at the very bottom for depth -->
+      <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black/20 to-transparent"></div>
+    </div>
 
-    <!-- LEFT: Typography Panel -->
-    <div class="flex flex-col justify-center px-8 md:px-16 xl:px-24 py-32 w-full lg:w-[50%] xl:w-[45%] relative z-10">
+    <!-- Typography Content (Integrated seamlessly, no box) -->
+    <div class="relative z-10 w-full lg:w-[50%] px-8 md:px-16 xl:px-24 py-24 flex flex-col justify-center">
 
       <!-- Eyebrow tag -->
-      <div class="flex items-center gap-3 mb-8 gsap-reveal">
-        <span class="block w-10 h-[1px] bg-[#C5A880]"></span>
-        <span class="text-[#C5A880] text-[10px] font-semibold tracking-[0.45em] uppercase">The Epitome of Royal Living</span>
+      <div class="flex items-center gap-3 mb-6 gsap-reveal">
+        <span class="block w-12 h-[1px] bg-luxeGold"></span>
+        <span class="text-luxeGold text-[10px] font-semibold tracking-[0.45em] uppercase">The Epitome of Royal Living</span>
       </div>
 
       <!-- Main Headline -->
-      <h1 class="font-heading text-[2.8rem] md:text-[3.8rem] xl:text-[4.5rem] leading-[1.05] text-[#1A1410] mb-6 gsap-reveal" style="letter-spacing:-0.01em; font-family:'Cormorant Garamond',Georgia,serif; font-weight:600;">
+      <h1 class="font-heading text-[3rem] md:text-[4rem] xl:text-[5rem] leading-[1.05] text-[#1F1F1F] mb-6 gsap-reveal" style="letter-spacing:-0.01em; font-family:'Cormorant Garamond',Georgia,serif; font-weight:600;">
         Handcrafted<br>
-        for <em style="font-style:italic; color:#C5A880;">Royal</em><br>
+        for <em style="font-style:italic; color:#D4AF37;">Royal</em><br>
         Spaces
       </h1>
 
       <!-- Divider line -->
-      <div class="w-16 h-[1px] bg-[#C5A880] mb-7 gsap-reveal"></div>
+      <div class="w-16 h-[1px] bg-luxeGold mb-7 gsap-reveal"></div>
 
       <!-- Subtext -->
-      <p class="text-[#2C2420] text-sm md:text-base leading-relaxed max-w-sm mb-10 font-normal gsap-reveal" style="letter-spacing:0.01em;">
+      <p class="text-[#2C2420] text-sm md:text-base leading-relaxed max-w-md mb-10 font-normal gsap-reveal" style="letter-spacing:0.01em;">
         Bespoke luxury furniture &amp; palace-inspired interiors — crafted by master artisans for elite residences worldwide.
       </p>
 
       <!-- CTAs -->
-      <div class="flex flex-wrap gap-4 gsap-reveal">
-        <a href="collections.html" class="btn-luxury-filled">Explore Collection</a>
-        <button class="btn-luxury trigger-inquiry">Book Consultation</button>
+      <div class="flex flex-wrap gap-5 gsap-reveal items-center">
+        <a href="collections.html" class="btn-luxury-filled shadow-xl">Explore Collection</a>
+        <button class="btn-luxury trigger-inquiry !text-[#1F1F1F] !border-[#1F1F1F] hover:!bg-[#1F1F1F]/5">Book Consultation</button>
       </div>
 
       <!-- Subtle stats row -->
-      <div class="flex gap-8 mt-14 gsap-reveal">
+      <div class="flex gap-10 mt-16 gsap-reveal">
         <div>
-          <div class="font-heading text-2xl text-[#1A1410] font-bold" style="font-family:'Cormorant Garamond',serif;">20+</div>
-          <div class="text-[10px] uppercase tracking-widest text-[#6B6560] mt-1 font-medium">Years of Craft</div>
+          <div class="font-heading text-2xl md:text-3xl text-[#1F1F1F] font-bold" style="font-family:'Cormorant Garamond',serif;">20+</div>
+          <div class="text-[9px] uppercase tracking-widest text-zinc-500 mt-2 font-medium">Years of Craft</div>
         </div>
-        <div class="border-l border-[#C5A880]/30 pl-8">
-          <div class="font-heading text-2xl text-[#1A1410] font-bold" style="font-family:'Cormorant Garamond',serif;">5000+</div>
-          <div class="text-[10px] uppercase tracking-widest text-[#6B6560] mt-1 font-medium">Elite Installs</div>
+        <div class="border-l border-zinc-300 pl-10">
+          <div class="font-heading text-2xl md:text-3xl text-[#1F1F1F] font-bold" style="font-family:'Cormorant Garamond',serif;">5000+</div>
+          <div class="text-[9px] uppercase tracking-widest text-zinc-500 mt-2 font-medium">Elite Installs</div>
         </div>
-        <div class="border-l border-[#C5A880]/30 pl-8">
-          <div class="font-heading text-2xl text-[#1A1410] font-bold" style="font-family:'Cormorant Garamond',serif;">100%</div>
-          <div class="text-[10px] uppercase tracking-widest text-[#6B6560] mt-1 font-medium">Handmade</div>
+        <div class="border-l border-zinc-300 pl-10">
+          <div class="font-heading text-2xl md:text-3xl text-[#1F1F1F] font-bold" style="font-family:'Cormorant Garamond',serif;">100%</div>
+          <div class="text-[9px] uppercase tracking-widest text-zinc-500 mt-2 font-medium">Handmade</div>
         </div>
       </div>
     </div>
 
-    <!-- RIGHT: Full-bleed Sharp Image Panel -->
-    <div class="hidden lg:block lg:w-[50%] xl:w-[55%] relative">
-      <!-- Image — NO blur, NO heavy overlay -->
-      <img
-        src="assets/img/hero_bg.png"
-        alt="FurnishHut Grand Luxury Living Space"
-        class="w-full h-full object-cover"
-        style="display:block; position:absolute; inset:0;"
-      >
-      <!-- Very subtle vignette on left edge only for blend -->
-      <div class="absolute inset-0" style="background: linear-gradient(to right, #F5F2ED 0%, transparent 12%);"></div>
-      <!-- Floating tag on image -->
-      <div class="absolute bottom-10 left-10 glass-panel px-5 py-4 border border-[#C5A880]/30" style="max-width:220px;">
-        <div class="text-[9px] text-[#C5A880] uppercase tracking-widest mb-1">Signature Collection</div>
-        <div class="font-heading text-sm text-[#2C2420]">Royal Palace Suite 2026</div>
-        <a href="collections.html" class="text-[10px] text-[#C5A880] uppercase tracking-wider mt-2 inline-block hover:underline">Discover →</a>
-      </div>
-    </div>
-
-    <!-- Mobile full-bg fallback (phones) -->
-    <div class="absolute inset-0 lg:hidden z-0">
-      <img src="assets/img/hero_bg.png" alt="Luxury Interior" class="w-full h-full object-cover">
-      <div class="absolute inset-0" style="background:rgba(245,242,237,0.82);"></div>
+    <!-- Floating tag on image (Bottom Right) -->
+    <div class="absolute bottom-10 right-10 z-10 hidden md:block text-right">
+      <div class="text-[9px] text-[#FDFBF7] uppercase tracking-widest mb-1 drop-shadow-md">Signature Collection</div>
+      <div class="font-heading text-sm text-[#FDFBF7] drop-shadow-md">Royal Palace Suite 2026</div>
     </div>
 
   </section>
-
 
   <!-- Section 2: All Collections Grid -->
   <section class="py-24 bg-white relative">
