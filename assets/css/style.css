@@ -101,6 +101,7 @@ a:hover {
 
 /* Premium Buttons */
 .btn-luxury {
+  display: inline-block;
   background: transparent;
   border: 1px solid var(--gold-primary);
   color: var(--gold-primary);
@@ -137,6 +138,7 @@ a:hover {
 }
 
 .btn-luxury-filled {
+  display: inline-block;
   background-color: var(--gold-primary);
   color: var(--bg-secondary);
   border: 1px solid var(--gold-primary);
@@ -1075,31 +1077,53 @@ a:hover {
 
 /* Featured Masterpieces Gallery & Category Card Mobile Optimization */
 @media (max-width: 768px) {
+  #galleryMasterpieces .gallery-item .relative {
+    border: 1px solid var(--border-gold) !important;
+    background: #fff !important;
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+  }
   #galleryMasterpieces .gallery-item .absolute.inset-0 {
+    position: relative !important;
     opacity: 1 !important;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0) 100%) !important;
-    justify-content: flex-end !important;
-    padding: 8px !important;
+    background: #fff !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    padding: 12px 10px !important;
+    height: auto !important;
+    border-top: 1px solid var(--border-gold) !important;
+    transform: none !important;
   }
   #galleryMasterpieces .gallery-item h4 {
-    font-size: 0.75rem !important;
+    font-size: 0.82rem !important;
     margin-bottom: 2px !important;
-    line-height: 1.2 !important;
+    line-height: 1.25 !important;
+    font-weight: 700 !important;
+    color: var(--text-primary) !important;
   }
   #galleryMasterpieces .gallery-item p {
-    font-size: 0.55rem !important;
-    margin-bottom: 5px !important;
+    font-size: 0.65rem !important;
+    margin-bottom: 8px !important;
     line-height: 1.2 !important;
+    color: var(--gold-dark) !important;
   }
   #galleryMasterpieces .gallery-item .btn-luxury {
-    font-size: 9px !important;
-    padding: 5px 10px !important;
+    font-size: 0px !important;
+    padding: 8px 10px !important;
+    width: 100% !important;
+    text-align: center !important;
     background-color: var(--gold-primary) !important;
     color: #fff !important;
     border-color: var(--gold-primary) !important;
-    width: auto !important;
-    align-self: flex-start !important;
-    box-shadow: 0 2px 5px rgba(197, 168, 128, 0.15) !important;
+    box-shadow: 0 2px 8px rgba(197, 168, 128, 0.15) !important;
+    display: block !important;
+    border-radius: 0 !important;
+  }
+  #galleryMasterpieces .gallery-item .btn-luxury::after {
+    content: 'INQUIRE';
+    font-size: 10px !important;
   }
 
   /* Category Card Mobile Premium Layout */
@@ -1183,9 +1207,11 @@ a:hover {
 
   /* Premium Filled Button Mobile Optimization */
   .btn-luxury-filled {
-    padding: 10px 18px !important;
-    font-size: 0.72rem !important;
-    letter-spacing: 0.12em !important;
     display: inline-block !important;
+    padding: 10px 16px !important;
+    font-size: 0.7rem !important;
+    letter-spacing: 0.1em !important;
+    white-space: nowrap !important;
+    max-width: 90% !important;
   }
 }

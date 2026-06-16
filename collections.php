@@ -212,7 +212,7 @@ include 'header.php';
     <h2 class="font-heading text-white text-3xl md:text-4xl mb-4">We Craft Anything. Bespoke.</h2>
     <div class="w-12 h-[1px] bg-[#C5A880] mx-auto mb-6"></div>
     <p style="color:#C5A880; opacity:0.75; font-size:0.875rem; max-width:500px; margin:0 auto 2rem; line-height:1.8;">Share your idea, reference image or room plan — our master artisans will craft it exactly as you envision, in solid teak with 24K gold gilding.</p>
-    <button class="btn-luxury-filled trigger-inquiry" style="padding:0.9rem 2.5rem;">Request Custom Design</button>
+    <button class="btn-luxury-filled trigger-inquiry">Request Custom Design</button>
   </section>
 
 <?php include 'footer.php'; ?>

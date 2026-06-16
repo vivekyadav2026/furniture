@@ -35,7 +35,7 @@
     }
   </script>
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=1.1">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.4">
 </head>
 <body class="bg-luxeCream text-luxeBlack">
 

@@ -276,7 +276,7 @@ include 'header.php';
 
       <!-- View All CTA -->
       <div class="text-center mt-12">
-        <a href="collections.php" class="btn-luxury-filled" style="padding:0.85rem 2.5rem;">View All Collections →</a>
+        <a href="collections.php" class="btn-luxury-filled" style="display: inline-block;">View All Collections →</a>
       </div>
 
     </div>
@@ -292,159 +292,153 @@ include 'header.php';
       </div>
 
       <!-- Gallery Filters -->
-      <div class="flex flex-wrap justify-center gap-4 mb-12 text-sm uppercase tracking-widest">
-        <button class="material-chip active px-4 py-2" onclick="filterGallery('all')">All Masterpieces</button>
-        <button class="material-chip px-4 py-2" onclick="filterGallery('bed')">King Size Beds</button>
-        <button class="material-chip px-4 py-2" onclick="filterGallery('sofa')">Luxury Sofas</button>
-        <button class="material-chip px-4 py-2" onclick="filterGallery('dining')">Palatial Dining</button>
-        <button class="material-chip px-4 py-2" onclick="filterGallery('throne')">Maharaja Chairs</button>
+      <?php
+      $gallery_config = [
+          'bed' => [
+              'name' => 'Royal Beds',
+              'folder' => 'assets/img/bedroom_furniture/',
+              'images' => [
+                  'Premium-Bedroom-Set-with-Modern-Home-scaled.webp' => 'Imperial King Bed',
+                  'Buy-Royal-Beds-Online-at-Best-Prices-side-drawers-scaled.webp' => 'Crown Tufted Canopy Bed'
+              ]
+          ],
+          'sofa' => [
+              'name' => 'Luxury Sofas',
+              'folder' => 'assets/img/Sofa_Set_Design/',
+              'images' => [
+                  '6-Seater-Glossy-Finish-Sofa-Set-YT-303.webp' => 'Baroque Velvet Sofa Set',
+                  'Classic-Rajwada-Sofa-Set-E.jpg' => 'Chesterfield Royal Lounge'
+              ]
+          ],
+          'dining' => [
+              'name' => 'Palatial Dining',
+              'folder' => 'assets/img/Dining_furniture/',
+              'images' => [
+                  'Gold-Brown-Dual-Shade-4-Seater-Dining-Set-Custom-Made-scaled.webp' => 'Grand Palace Dining Table',
+                  '04-Seater-Royal-Dining-Table-Set-at-Factory-Price-1.webp' => 'Royal Teakwood Dining Ensemble'
+              ]
+          ],
+          'console' => [
+              'name' => 'Console Tables',
+              'folder' => 'assets/img/console_table/',
+              'images' => [
+                  'Baroque-Style-Console-Table-jpg.webp' => 'Baroque Gold Console Table',
+                  'French-Style-Royal-Console-Table-CNS-0024-A-jpg.webp' => 'French Entryway Console'
+              ]
+          ],
+          'chair' => [
+              'name' => 'Accent Chairs',
+              'folder' => 'assets/img/gurujichair/',
+              'images' => [
+                  'Aarsun-Guruji-chair-jpg.webp' => 'Royal Maharaja Accent Chair',
+                  'Aarsun-Wooden-Guruji-Chair-with-Stool-in-Gold-Polish.webp' => 'Gilded Teak Accent Chair'
+              ]
+          ],
+          'table' => [
+              'name' => 'Centre Tables',
+              'folder' => 'assets/img/console_table/',
+              'images' => [
+                  'Designer-Wooden-Console-B.jpg' => 'Classic Carved Centre Table',
+                  'Wooden-Console.jpg' => 'Solid Teak Salon Centre Table'
+              ]
+          ],
+          'swing' => [
+              'name' => 'Royal Swings',
+              'folder' => 'assets/img/swing_design/',
+              'images' => [
+                  'Buy-a-strong-durable-and-long-lasting-wooden-swing.webp' => 'Royal Peacock Swing',
+                  'Indoor-Carved-Kashmiri-Swing-D-jpg.webp' => 'Indoor Carved Jhoola'
+              ]
+          ],
+          'mirror' => [
+              'name' => 'Ornate Mirrors',
+              'folder' => 'assets/img/console_table/',
+              'images' => [
+                  'Full-Handcrafted-Mirror-Console-Table-0.webp' => 'Full Handcrafted Mirror Console',
+                  'Grand-Console-with-Mirror-Frame-for-Home.jpg' => 'Grand Mirror Frame Console'
+              ]
+          ],
+          'mandir' => [
+              'name' => 'Pooja Mandirs',
+              'folder' => 'assets/img/temple/',
+              'images' => [
+                  '08-Feet-Home-Temple-Design-2.webp' => 'Palatial Home Mandir',
+                  '2026-Hindu-Puja-Mandir-Design-for-home.webp' => 'Gilded Teakwood Devalayam'
+              ]
+          ],
+          'door' => [
+              'name' => 'Designer Doors',
+              'folder' => 'assets/img/door_Design/',
+              'images' => [
+                  'Cut-Work-Style-Door-Design.webp' => 'Cut-Work Designer Door',
+                  'Solid-Wood-Classical-Door-Design.webp' => 'Grand Classical Teak Door'
+              ]
+          ],
+          'partition' => [
+              'name' => 'Partitions',
+              'folder' => 'assets/img/partition_and_decorative/',
+              'images' => [
+                  'Classic-Room-Separator-in-Sheesham-Wood-PART-0092-jpg.webp' => 'Classic Rajwada Partition',
+                  'Carved-Grapes-Pattern-Room-Divider-UH-PART-0084-jpg.webp' => 'Carved Grapes Room Divider'
+              ]
+          ],
+          'guruji' => [
+              'name' => 'Guruji Gaddi',
+              'folder' => 'assets/img/gurujichair/',
+              'images' => [
+                  'Aesthetic-Lion-Faced-Guru-Ji-Chair-1.webp' => 'Lion-Faced Satsang Gaddi',
+                  'Crafted-Royal-Chair-for-Guruji-Gaddi-Design-1-1.webp' => 'Royal Satsang Singhasan'
+              ]
+          ],
+          'office' => [
+              'name' => 'Office Furniture',
+              'folder' => 'assets/img/Office_furniture/',
+              'images' => [
+                  'Chairmans-Luxurious-Office-Furniture-2-scaled.webp' => 'Chairmans Luxurious Workspace',
+                  'Designer-Office-Workspace-Furniture-2-scaled.webp' => 'Designer Workspace Ensemble'
+              ]
+          ],
+          'study' => [
+              'name' => 'Study Tables',
+              'folder' => 'assets/img/Office_furniture/',
+              'images' => [
+                  'Smart-Corporate-Workspace-Furniture-2-scaled.webp' => 'Regal Carved Study Table',
+                  'Upgrade-Your-Office-with-Stylish-Hand-carved-Furniture-1-scaled.webp' => 'Executive Hand-Carved Desk'
+              ]
+          ]
+      ];
+      ?>
+      <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 text-xs md:text-sm uppercase tracking-widest">
+        <button class="material-chip active px-3 py-1.5 md:px-4 md:py-2" onclick="filterGallery('all')">All Masterpieces</button>
+        <?php
+        foreach ($gallery_config as $filter => $cat) {
+            echo '<button class="material-chip px-3 py-1.5 md:px-4 md:py-2" onclick="filterGallery(\'' . htmlspecialchars($filter) . '\')">' . htmlspecialchars($cat['name']) . '</button>';
+        }
+        ?>
       </div>
-
+ 
       <!-- Gallery Grid -->
       <div class="row g-4" id="galleryMasterpieces">
-        <!-- Item 1 -->
-        <div class="col-6 col-md-4 gallery-item bed gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/bedroom_furniture/Premium-Bedroom-Set-with-Modern-Home-scaled.webp" alt="Imperial King Bed" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Imperial Carved King Bed</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Burmese Teak & 24K Gilding</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 2 -->
-        <div class="col-6 col-md-4 gallery-item sofa gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/Sofa_Set_Design/6-Seater-Glossy-Finish-Sofa-Set-YT-303.webp" alt="Baroque Velvet Sofa Set" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Baroque Deep Velvet Sofa Set</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Bentley Home Luxury Concept</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 3 -->
-        <div class="col-6 col-md-4 gallery-item dining gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/Dining_furniture/Gold-Brown-Dual-Shade-4-Seater-Dining-Set-Custom-Made-scaled.webp" alt="Grand Palace Dining Ensemble" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Grand Palace Dining Table</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">White Calacatta Marble Top</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 4 -->
-        <div class="col-6 col-md-4 gallery-item throne gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/gurujichair/Customized-Wooden-Guru-Ji-Chair-Royal-Sofa-Chair.webp" alt="Gilded Teak Throne" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Gilded Teak Throne Chair</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Palace Entrance Masterpiece</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 5 -->
-        <div class="col-6 col-md-4 gallery-item bed gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/bedroom_furniture/Buy-Royal-Beds-Online-at-Best-Prices-side-drawers-scaled.webp" alt="Crown Tufted Canopy Bed" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Crown Tufted Canopy Bed</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Bespoke Royal Bedding</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 6 -->
-        <div class="col-6 col-md-4 gallery-item sofa gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/Sofa_Set_Design/Classic-Rajwada-Sofa-Set-E.jpg" alt="Chesterfield Royal Sectional" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Chesterfield Royal Lounge</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Custom High-End Panel Fit</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 7 -->
-        <div class="col-6 col-md-4 gallery-item throne gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/temple/2026-Hindu-Puja-Mandir-Design-for-home.webp" alt="Hindu Puja Mandir" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Hindu Puja Mandir</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Teakwood Spiritual Sanctuary</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 8 -->
-        <div class="col-6 col-md-4 gallery-item sofa gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/swing_design/Buy-a-strong-durable-and-long-lasting-wooden-swing.webp" alt="Royal Peacock Swing" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Royal Peacock Swing</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Handcrafted Solid Teak Swing</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 9 -->
-        <div class="col-6 col-md-4 gallery-item dining gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/partition_and_decorative/Classic-Room-Separator-in-Sheesham-Wood-PART-0092-jpg.webp" alt="Classic Rajwada Partition" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Classic Rajwada Partition</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Sheesham Wood Carved Screen</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 10 -->
-        <div class="col-6 col-md-4 gallery-item throne gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/gurujichair/Aesthetic-Lion-Faced-Guru-Ji-Chair-1.webp" alt="Aesthetic Lion Throne" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Aesthetic Lion Throne</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">24K Gilded Gaddi Singhasan</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 11 -->
-        <div class="col-6 col-md-4 gallery-item bed gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/door_Design/Cut-Work-Style-Door-Design.webp" alt="Cut-Work Designer Door" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">Cut-Work Designer Door</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Grand Entrance Teak Door</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Item 12 -->
-        <div class="col-6 col-md-4 gallery-item dining gsap-reveal">
-          <div class="relative overflow-hidden group">
-            <img src="assets/img/console_table/French-Style-Royal-Console-Table-CNS-0024-A-jpg.webp" alt="French Entryway Console" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h4 class="font-heading text-lg text-luxeBlack">French Entryway Console</h4>
-              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Baroque Carved Entryway Table</p>
-              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-            </div>
-          </div>
-        </div> <!-- col-6 -->
+        <?php
+        foreach ($gallery_config as $filter => $cat) {
+            foreach ($cat['images'] as $file => $title) {
+                $img_path = $cat['folder'] . $file;
+                ?>
+                <!-- Dynamic Item -->
+                <div class="col-6 col-md-4 gallery-item <?php echo htmlspecialchars($filter); ?> gsap-reveal">
+                  <div class="relative overflow-hidden group">
+                    <img src="<?php echo htmlspecialchars($img_path); ?>" alt="<?php echo htmlspecialchars($title); ?>" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                      <h4 class="font-heading text-lg text-luxeBlack"><?php echo htmlspecialchars($title); ?></h4>
+                      <p class="text-luxeGold text-xs tracking-wider uppercase mb-3"><?php echo htmlspecialchars($cat['name']); ?></p>
+                      <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
+                    </div>
+                  </div>
+                </div>
+                <?php
+            }
+        }
+        ?>
       </div> <!-- row -->
     </div> <!-- container -->
   </section> <!-- section -->

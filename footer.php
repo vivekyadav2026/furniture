@@ -149,10 +149,13 @@
           item.style.display = 'none';
         }
       });
-      // Toggle active states on chips
-      const chips = document.querySelectorAll('.gallery-container button');
-      // Update chip classes as appropriate
-      event.target.classList.add('active');
+      // Toggle active states on chips (active class toggle)
+      const currentButton = event.currentTarget || event.srcElement;
+      if (currentButton && currentButton.parentElement) {
+        const chips = currentButton.parentElement.querySelectorAll('button');
+        chips.forEach(c => c.classList.remove('active'));
+        currentButton.classList.add('active');
+      }
     }
   </script>
 </body>
