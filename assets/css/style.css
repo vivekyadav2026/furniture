@@ -1,4 +1,5 @@
-html, body { overflow-x: hidden; width: 100%; position: relative; }\n/* Premium Luxury Fonts — Cormorant Garamond (editorial serif) + DM Sans (clean body) */
+html, body { overflow-x: clip; width: 100%; position: relative; }
+/* Premium Luxury Fonts — Cormorant Garamond (editorial serif) + DM Sans (clean body) */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root {
@@ -32,7 +33,7 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-secondary);
   font-family: var(--font-body);
-  overflow-x: hidden;
+  overflow-x: clip;
   font-weight: 400;        /* bumped from 300 — much more readable */
   line-height: 1.75;
   -webkit-font-smoothing: antialiased;
@@ -910,7 +911,7 @@ a:hover {
   height: 100vh;
   background-color: var(--bg-secondary);
   border-left: 1px solid var(--border-gold);
-  z-index: 1000;
+  z-index: 1060;
   padding: 3rem 2rem;
   box-shadow: -10px 0 30px rgba(0,0,0,0.1);
   transition: right 0.5s cubic-bezier(0.25, 1, 0.5, 1);
@@ -944,7 +945,7 @@ a:hover {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0,0,0,0.5);
-  z-index: 999;
+  z-index: 1050;
   display: none;
 }
 
@@ -1029,6 +1030,7 @@ a:hover {
   .inquiry-drawer {
     width: 100%;
     right: -100%;
+    padding: 1.5rem 1rem;
   }
   .before-after-container {
     height: 300px;
@@ -1041,4 +1043,141 @@ a:hover {
 /* Fix Tailwind / Bootstrap .collapse conflict */
 .navbar-collapse.collapse {
   visibility: visible !important;
+}
+.card-luxury {
+  position: relative;
+}
+.card-luxury::before {
+  content: 'INQUIRE BESPOKE';
+  position: absolute;
+  top: 15%;
+  left: -50px;
+  background-color: #D8B68E;
+  color: #fff;
+  padding: 15px 5px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  z-index: 10;
+  transition: all 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  box-shadow: 2px 0px 10px rgba(0,0,0,0.1);
+}
+.card-luxury:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+/* Featured Masterpieces Gallery & Category Card Mobile Optimization */
+@media (max-width: 768px) {
+  #galleryMasterpieces .gallery-item .absolute.inset-0 {
+    opacity: 1 !important;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.8) 65%, rgba(255, 255, 255, 0) 100%) !important;
+    justify-content: flex-end !important;
+    padding: 8px !important;
+  }
+  #galleryMasterpieces .gallery-item h4 {
+    font-size: 0.75rem !important;
+    margin-bottom: 2px !important;
+    line-height: 1.2 !important;
+  }
+  #galleryMasterpieces .gallery-item p {
+    font-size: 0.55rem !important;
+    margin-bottom: 5px !important;
+    line-height: 1.2 !important;
+  }
+  #galleryMasterpieces .gallery-item .btn-luxury {
+    font-size: 9px !important;
+    padding: 5px 10px !important;
+    background-color: var(--gold-primary) !important;
+    color: #fff !important;
+    border-color: var(--gold-primary) !important;
+    width: auto !important;
+    align-self: flex-start !important;
+    box-shadow: 0 2px 5px rgba(197, 168, 128, 0.15) !important;
+  }
+
+  /* Category Card Mobile Premium Layout */
+  .card-luxury-img {
+    height: 160px !important;
+  }
+  .card-luxury .p-4 {
+    padding: 12px 8px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 4px !important;
+  }
+  .card-luxury .p-4 h3 {
+    font-size: 0.82rem !important;
+    line-height: 1.2 !important;
+    margin: 0 !important;
+    font-weight: 700 !important;
+  }
+  .card-luxury .p-4 span.text-luxeGold,
+  .card-luxury .p-4 a.text-luxeGold {
+    font-size: 8px !important;
+    letter-spacing: 0.1em !important;
+    margin-top: 1px !important;
+  }
+
+  /* Product Card Mobile Premium Layout (for subpages like bedroom.php, office.php etc) */
+  .card-luxury .p-6 {
+    padding: 12px 10px !important;
+  }
+  .card-luxury .p-6 p,
+  .card-luxury .p-6 ul {
+    display: none !important; /* Hide description & specs list on mobile for compactness */
+  }
+  .card-luxury .p-6 span {
+    font-size: 8px !important;
+    letter-spacing: 0.1em !important;
+    margin-bottom: 4px !important;
+    text-align: center !important;
+    display: block !important;
+  }
+  .card-luxury .p-6 h3 {
+    font-size: 0.85rem !important;
+    line-height: 1.25 !important;
+    min-height: auto !important;
+    margin-bottom: 8px !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+  }
+
+  /* Redesign Outline Button to Solid Gold Inquire Button on Mobile */
+  .card-luxury .btn-luxury {
+    background-color: var(--gold-primary) !important;
+    color: #fff !important;
+    border-color: var(--gold-primary) !important;
+    padding: 8px 10px !important;
+    font-size: 0px !important; /* Hide long desktop text */
+    font-weight: 700 !important;
+    letter-spacing: 0.12em !important;
+    text-transform: uppercase !important;
+    box-shadow: 0 3px 10px rgba(197, 168, 128, 0.15) !important;
+    display: block !important;
+    width: 100% !important;
+    transition: var(--transition-smooth) !important;
+    border-radius: 0 !important;
+  }
+  .card-luxury .btn-luxury::after {
+    content: 'INQUIRE';
+    font-size: 10px !important;
+  }
+  .card-luxury .btn-luxury:hover {
+    background-color: var(--gold-dark) !important;
+    border-color: var(--gold-dark) !important;
+  }
+
+  /* Balanced mobile grid margins & gutters */
+  .row.g-5, .row.g-4 {
+    --bs-gutter-x: 12px !important;
+    --bs-gutter-y: 12px !important;
+  }
 }

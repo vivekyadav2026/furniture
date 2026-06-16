@@ -26,7 +26,7 @@ include 'header.php';
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="row g-4 justify-center">
         <!-- Gallery Card 1 -->
-        <div class="col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 gsap-reveal">
           <div class="card-luxury relative">
             <div class="lookbook-image-wrapper">
               <img src="assets/img/bedroom_furniture/Handcrafted-Wooden-Beds-Without-Storage-scaled.webp" alt="Royal Bedroom Chamber" class="w-full h-[450px] object-cover">
@@ -43,7 +43,7 @@ include 'header.php';
         </div>
 
         <!-- Gallery Card 2 -->
-        <div class="col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 gsap-reveal">
           <div class="card-luxury relative">
             <div class="lookbook-image-wrapper">
               <img src="assets/img/Sofa_Set_Design/Chesterfield-sofa-top-design-International-Brand.webp" alt="Luxury Penthouse Lounge" class="w-full h-[450px] object-cover">
@@ -60,7 +60,7 @@ include 'header.php';
         </div>
 
         <!-- Gallery Card 3 -->
-        <div class="col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 gsap-reveal">
           <div class="card-luxury relative">
             <div class="lookbook-image-wrapper">
               <img src="assets/img/Dining_furniture/DINING-CHAIR-400x226.webp" alt="Palatial Dining Banquet" class="w-full h-[450px] object-cover">
@@ -77,7 +77,7 @@ include 'header.php';
         </div>
 
         <!-- Gallery Card 4 -->
-        <div class="col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 gsap-reveal">
           <div class="card-luxury relative">
             <div class="lookbook-image-wrapper">
               <img src="assets/img/gurujichair/Aesthetic-Lion-Faced-Guru-Ji-Chair-1.webp" alt="Royal Entrance lobby" class="w-full h-[450px] object-cover">

@@ -26,7 +26,7 @@ include 'header.php';
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="row g-5">
         <!-- Film 1 -->
-        <div class="col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 gsap-reveal">
           <div class="card-luxury relative">
             <div class="relative overflow-hidden group h-[300px]">
               <img src="assets/img/Sofa_Set_Design/Hand-Carved-Sofa-Set-Teak-Wood-YT-220-scaled.webp" alt="Woodcarving Film Thumb" class="w-full h-full object-cover transition-transform group-hover:scale-105">
@@ -48,7 +48,7 @@ include 'header.php';
         </div>
 
         <!-- Film 2 -->
-        <div class="col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 gsap-reveal">
           <div class="card-luxury relative">
             <div class="relative overflow-hidden group h-[300px]">
               <img src="assets/img/gurujichair/Guru-Ji-Chair-2-white-back.webp" alt="Gold Leaf Gilding Film Thumb" class="w-full h-full object-cover transition-transform group-hover:scale-105">
@@ -69,7 +69,7 @@ include 'header.php';
         </div>
 
         <!-- Film 3 -->
-        <div class="col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 gsap-reveal">
           <div class="card-luxury relative">
             <div class="relative overflow-hidden group h-[300px]">
               <img src="assets/img/Sofa_Set_Design/Hand-Carved-Wooden-Sofa-for-Home-YT-183.jpg" alt="Upholstery Film Thumb" class="w-full h-full object-cover transition-transform group-hover:scale-105">
@@ -90,7 +90,7 @@ include 'header.php';
         </div>
 
         <!-- Film 4 -->
-        <div class="col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 gsap-reveal">
           <div class="card-luxury relative">
             <div class="relative overflow-hidden group h-[300px]">
               <img src="assets/img/Sofa_Set_Design/Handcrafted-5-Seater-Wooden-Sofa-Set-SF-0095.webp" alt="Installation Film Thumb" class="w-full h-full object-cover transition-transform group-hover:scale-105">

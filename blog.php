@@ -26,7 +26,7 @@ include 'header.php';
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="row g-5">
         <!-- Article 1 -->
-        <div class="col-lg-4 col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 col-lg-4 gsap-reveal">
           <div class="card-luxury">
             <div class="card-luxury-img-wrapper">
               <img src="assets/img/Sofa_Set_Design/Baithak-Sofa-Set-in-Teak-H-1.jpg" alt="Acanthus Relief article thumb" class="card-luxury-img">
@@ -43,7 +43,7 @@ include 'header.php';
         </div>
 
         <!-- Article 2 -->
-        <div class="col-lg-4 col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 col-lg-4 gsap-reveal">
           <div class="card-luxury">
             <div class="card-luxury-img-wrapper">
               <img src="assets/img/gurujichair/Aarsun-Wooden-Guruji-Chair-with-Stool-in-Gold-Polish.webp" alt="Gold Leaf Gilding article thumb" class="card-luxury-img">
@@ -60,7 +60,7 @@ include 'header.php';
         </div>
 
         <!-- Article 3 -->
-        <div class="col-lg-4 col-md-6 gsap-reveal">
+        <div class="col-6 col-md-6 col-lg-4 gsap-reveal">
           <div class="card-luxury">
             <div class="card-luxury-img-wrapper">
               <img src="assets/img/Sofa_Set_Design/Best-Selling-Heavy-Sofa-Set.webp" alt="High ceiling salon article thumb" class="card-luxury-img">

@@ -58,7 +58,7 @@ include 'header.php';
 
       <div class="row g-4">
         <!-- Artisan 1 -->
-        <div class="col-md-4 gsap-reveal">
+        <div class="col-6 col-md-4 gsap-reveal">
           <div class="card-luxury">
             <div class="card-luxury-img-wrapper">
               <img src="assets/img/Sofa_Set_Design/6-Seater-Glossy-Finish-Sofa-Set-YT-303.webp" alt="Master Wood Carver" class="card-luxury-img">
@@ -74,7 +74,7 @@ include 'header.php';
         </div>
 
         <!-- Artisan 2 -->
-        <div class="col-md-4 gsap-reveal">
+        <div class="col-6 col-md-4 gsap-reveal">
           <div class="card-luxury">
             <div class="card-luxury-img-wrapper">
               <img src="assets/img/gurujichair/Aarsun-Guruji-chair-jpg.webp" alt="Master Polish Artist" class="card-luxury-img">
@@ -90,7 +90,7 @@ include 'header.php';
         </div>
 
         <!-- Artisan 3 -->
-        <div class="col-md-4 gsap-reveal">
+        <div class="col-6 col-md-4 gsap-reveal">
           <div class="card-luxury">
             <div class="card-luxury-img-wrapper">
               <img src="assets/img/Sofa_Set_Design/7-Seater-Sofa-Set-in-Royal-Finish.webp" alt="Master Upholsterer" class="card-luxury-img">
@@ -112,19 +112,19 @@ include 'header.php';
   <section class="py-24 bg-luxeCream">
     <div class="container mx-auto px-4 max-w-7xl">
       <div class="row g-4 justify-center">
-        <div class="col-md-4 text-center p-6 gsap-reveal">
+        <div class="col-6 col-md-4 text-center p-6 gsap-reveal">
           <h4 class="font-heading text-2xl text-luxeGold mb-3">Sovereignty of Design</h4>
           <p class="text-xs leading-relaxed text-zinc-400">
             We never duplicate molds or use structural plastic. Every component is engineered in heavy Teak wood with absolute design integrity.
           </p>
         </div>
-        <div class="col-md-4 text-center p-6 gsap-reveal">
+        <div class="col-6 col-md-4 text-center p-6 gsap-reveal">
           <h4 class="font-heading text-2xl text-luxeGold mb-3">Heirloom Longevity</h4>
           <p class="text-xs leading-relaxed text-zinc-400">
             FurnishHut pieces are structural investments. With correct interior maintenance, our frames are guaranteed to endure for generations.
           </p>
         </div>
-        <div class="col-md-4 text-center p-6 gsap-reveal">
+        <div class="col-6 col-md-4 text-center p-6 gsap-reveal">
           <h4 class="font-heading text-2xl text-luxeGold mb-3">Ethical Sourcing</h4>
           <p class="text-xs leading-relaxed text-zinc-400">
             Our hardwood is procured solely from sustainable Government timber farms, dried over three years to prevent structural warping.

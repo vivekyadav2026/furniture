@@ -48,7 +48,7 @@ if (!empty($images)) {
         }
         
         echo '<!-- Dynamic Product Card -->';
-        echo '<div class="col-lg-4 col-md-6 gsap-reveal">';
+        echo '<div class="col-6 col-md-6 col-lg-4 gsap-reveal">';
         echo '  <div class="card-luxury">';
         echo '    <div class="card-luxury-img-wrapper">';
         echo '      <img src="' . htmlspecialchars($img) . '" alt="' . htmlspecialchars($display_title) . '" class="card-luxury-img">';

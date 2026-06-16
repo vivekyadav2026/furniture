@@ -67,15 +67,15 @@ include 'header.php';
             <form class="luxury-form row g-3">
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Full Name</label>
-                <input type="text" required class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <input type="text" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               </div>
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Email</label>
-                <input type="email" required class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <input type="email" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               </div>
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Consultation Type</label>
-                <select class="form-select bg-white text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-white focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <select class="form-select bg-white text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-white focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
                   <option value="virtual">Virtual Zoom Design Session</option>
                   <option value="milan">Milan Flagship In-person</option>
                   <option value="london">London Mayfair In-person</option>
@@ -84,7 +84,7 @@ include 'header.php';
               </div>
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Target Date</label>
-                <input type="date" required class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <input type="date" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               </div>
               <div class="col-12 mt-4">
                 <button type="submit" class="btn-luxury-filled w-full">Request Invitation</button>

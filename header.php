@@ -35,7 +35,7 @@
     }
   </script>
   <!-- Custom Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=1.1">
 </head>
 <body class="bg-luxeCream text-luxeBlack">
 
@@ -55,18 +55,20 @@
     <!-- ========================================
        PREMIUM 3-PART NAVBAR
        ======================================== -->
-  <header class="fh-super-header">
-    <!-- PART 1: Top Announcement Strip (Maroon) -->
-    <div id="topBar" style="background:#7B1C2E; padding:7px 0; overflow:hidden; position:relative;">
-      <div class="marquee-track" style="display:flex; white-space:nowrap; animation: marqueeScroll 28s linear infinite;">
-        <span style="color:#fff; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; font-family:'DM Sans',sans-serif; font-weight:500; padding:0 3rem;">
-          ✦ &nbsp; Luxury Handcrafted Furniture &nbsp;&nbsp;|&nbsp;&nbsp; 100% Solid Teak &amp; Rosewood &nbsp;&nbsp;|&nbsp;&nbsp; Custom Designs Available &nbsp;&nbsp;|&nbsp;&nbsp; 📞 +91-98765-43210 &nbsp;&nbsp;|&nbsp;&nbsp; Global Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp; Palace-Grade Artistry Since 2004 &nbsp;&nbsp;|
-        </span>
-        <span style="color:#fff; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; font-family:'DM Sans',sans-serif; font-weight:500; padding:0 3rem;">
-          ✦ &nbsp; Luxury Handcrafted Furniture &nbsp;&nbsp;|&nbsp;&nbsp; 100% Solid Teak &amp; Rosewood &nbsp;&nbsp;|&nbsp;&nbsp; Custom Designs Available &nbsp;&nbsp;|&nbsp;&nbsp; 📞 +91-98765-43210 &nbsp;&nbsp;|&nbsp;&nbsp; Global Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp; Palace-Grade Artistry Since 2004 &nbsp;&nbsp;|
-        </span>
-      </div>
+  <!-- PART 1: Top Announcement Strip (Maroon) -->
+  <div id="topBar" style="background:#7B1C2E; padding:7px 0; overflow:hidden; position:relative;">
+    <div class="marquee-track" style="display:flex; white-space:nowrap; animation: marqueeScroll 28s linear infinite;">
+      <span style="color:#fff; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; font-family:'DM Sans',sans-serif; font-weight:500; padding:0 3rem;">
+        ✦ &nbsp; Luxury Handcrafted Furniture &nbsp;&nbsp;|&nbsp;&nbsp; 100% Solid Teak &amp; Rosewood &nbsp;&nbsp;|&nbsp;&nbsp; Custom Designs Available &nbsp;&nbsp;|&nbsp;&nbsp; 📞 +91-98765-43210 &nbsp;&nbsp;|&nbsp;&nbsp; Global Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp; Palace-Grade Artistry Since 2004 &nbsp;&nbsp;|
+      </span>
+      <span style="color:#fff; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; font-family:'DM Sans',sans-serif; font-weight:500; padding:0 3rem;">
+        ✦ &nbsp; Luxury Handcrafted Furniture &nbsp;&nbsp;|&nbsp;&nbsp; 100% Solid Teak &amp; Rosewood &nbsp;&nbsp;|&nbsp;&nbsp; Custom Designs Available &nbsp;&nbsp;|&nbsp;&nbsp; 📞 +91-98765-43210 &nbsp;&nbsp;|&nbsp;&nbsp; Global Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp; Palace-Grade Artistry Since 2004 &nbsp;&nbsp;|
+      </span>
     </div>
+  </div>
+
+  <header class="fh-super-header">
+
 
     <!-- PART 2: Main Header (White bg — Logo + Search + Icons + CTA) -->
     <div id="mainHeader" style="background:#fff; border-bottom:2px solid #ede5d8; padding:8px 0;">

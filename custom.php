@@ -73,19 +73,19 @@ include 'header.php';
               
               <div class="col-12">
                 <label class="form-label text-xs uppercase text-luxeGold tracking-widest">Full Name</label>
-                <input type="text" required class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <input type="text" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               </div>
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase text-luxeGold tracking-widest">Contact Number</label>
-                <input type="tel" required class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <input type="tel" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               </div>
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase text-luxeGold tracking-widest">Room Dimensions</label>
-                <input type="text" placeholder="e.g. 5m x 6m" class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <input type="text" placeholder="e.g. 5m x 6m" class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               </div>
               <div class="col-12">
                 <label class="form-label text-xs uppercase text-luxeGold tracking-widest">Scope of Work</label>
-                <textarea rows="3" required placeholder="Outline bedroom set, sofa layout, pooja mandir width, or complete room architectural remodeling needs..." class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:outline-none"></textarea>
+                <textarea rows="3" required placeholder="Outline bedroom set, sofa layout, pooja mandir width, or complete room architectural remodeling needs..." class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:outline-none"></textarea>
               </div>
               <div class="col-12 mt-4">
                 <button type="submit" class="btn-luxury-filled w-full">Request Digital Blueprint</button>

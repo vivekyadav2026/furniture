@@ -87,198 +87,191 @@ include 'header.php';
         <p class="text-gray-500 text-sm max-w-xl mx-auto">Every piece handcrafted in solid teak &amp; rosewood with 24K gold gilding — made to palace-grade standards.</p>
       </div>
 
-      <!-- Featured Row: Bed + Sofa (big) -->
-      <div class="row g-4 mb-4">
-        <div class="col-lg-6">
-          <div class="card-luxury" style="position:relative;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/bedroom_furniture/Premium-Bedroom-Set-in-White-Gold-scaled.webp" alt="Royal Handcrafted Beds" class="card-luxury-img" style="height:400px;">
-            </div>
-            <div style="position:absolute;top:1rem;left:1rem;background:#C5A880;color:#fff;font-size:9px;letter-spacing:0.2em;padding:4px 12px;text-transform:uppercase;font-family:'Montserrat',sans-serif;">Royal Collection</div>
-            <div class="p-5 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <div>
-                <h3 class="text-xl font-heading text-luxeBlack mb-1">Royal Beds</h3>
-                <span class="text-[10px] text-gray-400 uppercase tracking-wider">King · Queen · Canopy · Custom</span>
-              </div>
-              <a href="bedroom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Explore →</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card-luxury" style="position:relative;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/Sofa_Set_Design/10-Seater-Sofa-Set-Center-Table-2-Corner-Tables-Carved-in-Teak-YT-416-scaled.webp" alt="Luxury Carved Sofa Sets" class="card-luxury-img" style="height:400px;">
-            </div>
-            <div style="position:absolute;top:1rem;left:1rem;background:#C5A880;color:#fff;font-size:9px;letter-spacing:0.2em;padding:4px 12px;text-transform:uppercase;font-family:'Montserrat',sans-serif;">Signature Series</div>
-            <div class="p-5 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <div>
-                <h3 class="text-xl font-heading text-luxeBlack mb-1">Sofa Sets</h3>
-                <span class="text-[10px] text-gray-400 uppercase tracking-wider">3+1+1 · L-Shape · Custom</span>
-              </div>
-              <a href="sofa.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Explore →</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Grid of all 15 categories -->
+      <div class="row g-5">
 
-      <!-- Grid of remaining 13 categories -->
-      <div class="row g-4">
-        <!-- Console Table -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card-luxury">
+        <!-- Category 1 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="bedroom.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/console_table/Full-Handcrafted-Mirror-Console-With-Designer-Table.webp" alt="Console Tables" class="card-luxury-img" style="height:260px;">
+              <img src="assets/img/bedroom_furniture/Luxury-Teak-Wood-Bed-with-Storage-scaled.webp" alt="Royal Beds" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-4 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h3 class="text-base font-heading text-luxeBlack">Console Tables</h3>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Royal Beds</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Dining -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 2 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="sofa.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/Dining_furniture/dining-table-chair-design (2).webp" alt="Dining Sets" class="card-luxury-img" style="height:260px;">
+              <img src="assets/img/Sofa_Set_Design/10-Seater-Royal-Concept-Sofa-Set-YT-582.webp" alt="Luxury Sofa Sets" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-4 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h3 class="text-base font-heading text-luxeBlack">Dining Sets</h3>
-              <a href="dining.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Explore →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Luxury Sofa Sets</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Chair -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 3 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="dining.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/gurujichair/Antique-Gold-Guruji-Chair-Singhasan-YT-641.webp" alt="Accent Chairs" class="card-luxury-img" style="height:260px;">
+              <img src="assets/img/Dining_furniture/04-Seater-Royal-Dining-Table-Set-at-Factory-Price-1.webp" alt="Dining Sets" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-4 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h3 class="text-base font-heading text-luxeBlack">Accent Chairs</h3>
-              <a href="throne.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Explore →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Dining Sets</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Table -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 4 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="console.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/console_table/Grand-Console-with-Mirror-Frame-for-Home.jpg" alt="Centre Tables" class="card-luxury-img" style="height:220px;">
+              <img src="assets/img/console_table/Baroque-Style-Console-Table-jpg.webp" alt="Console Tables" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Centre Tables</h4>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Console Tables</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Swings -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 5 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="throne.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/swing_design/Buy-a-strong-durable-and-long-lasting-wooden-swing.webp" alt="Royal Swings" class="card-luxury-img" style="height:220px;">
+              <img src="assets/img/gurujichair/Aarsun-Guruji-chair-jpg.webp" alt="Accent Chairs" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Royal Swings</h4>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Accent Chairs</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Mirrors -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 6 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="#" class="card-luxury block cursor-pointer trigger-inquiry" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/partition_and_decorative/Classic-Room-Separator-in-Sheesham-Wood-PART-0092-jpg.webp" alt="Ornate Mirrors" class="card-luxury-img" style="height:220px;object-position:right;">
+              <img src="assets/img/console_table/Designer-Wooden-Console-B.jpg" alt="Centre Tables" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Ornate Mirrors</h4>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Centre Tables</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Inquire &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Mandir -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 7 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="swing.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/temple/2026-Hindu-Puja-Mandir-Design-for-home.webp" alt="Pooja Mandirs" class="card-luxury-img" style="height:220px;">
+              <img src="assets/img/swing_design/Buy-a-strong-durable-and-long-lasting-wooden-swing.webp" alt="Royal Swings" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Pooja Mandirs</h4>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Royal Swings</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Rock Chairs -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 8 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="mirrors.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/gurujichair/Antique-Guru-JI-Chair-with-lion-handles-5.webp" alt="Rocking Chairs" class="card-luxury-img" style="height:220px;">
+              <img src="assets/img/partition_and_decorative/Antique-Style-Room-Divider-UH-PART-0087-jpg.webp" alt="Ornate Mirrors" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Rocking Chairs</h4>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Ornate Mirrors</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Doors -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 9 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="mandir.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/door_Design/Decorative-Wooden-Door-Design.webp" alt="Designer Doors" class="card-luxury-img" style="height:220px;">
+              <img src="assets/img/temple/08-Feet-Home-Temple-Design-2.webp" alt="Pooja Mandirs" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Designer Doors</h4>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Pooja Mandirs</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Partition -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 11 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="doors.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/partition_and_decorative/Floral-Carving-Partition-Screen-UH-PART-0047-jpg.webp" alt="Partition Designs" class="card-luxury-img" style="height:220px;">
+              <img src="assets/img/door_Design/Cut-Work-Style-Door-Design.webp" alt="Designer Doors" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Partition Designs</h4>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Designer Doors</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Guruji Chair -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 12 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="partition.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/gurujichair/Crafted-Royal-Chair-for-Guruji-Gaddi-Design-1-1.webp" alt="Guruji Chair" class="card-luxury-img" style="height:220px;">
+              <img src="assets/img/partition_and_decorative/Carved-Grapes-Pattern-Room-Divider-UH-PART-0084-jpg.webp" alt="Partition Designs" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Guruji Chair</h4>
-              <a href="throne.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Explore →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Partition Designs</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Office Furniture -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 13 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="guruji.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/Office_furniture/Custom-built-executive-Furniture-for-Office-2-scaled.webp" alt="Office Furniture" class="card-luxury-img" style="height:220px;object-position:left;">
+              <img src="assets/img/gurujichair/Aesthetic-Lion-Faced-Guru-Ji-Chair-1.webp" alt="Guruji Chair" class="card-luxury-img" style="height:350px;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Office Furniture</h4>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Guruji Chair</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
-        <!-- Study Tables -->
-        <div class="col-lg-3 col-md-6">
-          <div class="card-luxury">
+
+        <!-- Category 14 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="office.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
             <div class="card-luxury-img-wrapper">
-              <img src="assets/img/console_table/Hallway-Entryway-Console-For-Home-0.webp" alt="Study Tables" class="card-luxury-img" style="height:220px;">
+              <img src="assets/img/Office_furniture/Chairmans-Luxurious-Office-Furniture-2-scaled.webp" alt="Office Furniture" class="card-luxury-img" style="height:350px; object-position:left;">
             </div>
-            <div class="p-3 flex justify-between items-center border-t border-[rgba(197,168,128,0.15)]">
-              <h4 class="text-sm font-heading text-luxeBlack">Study Tables</h4>
-              <a href="custom.php" class="text-luxeGold text-xs tracking-widest uppercase hover:underline">Inquire →</a>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Office Furniture</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
             </div>
-          </div>
+          </a>
         </div>
+
+        <!-- Category 15 -->
+        <div class="col-6 col-md-6 col-lg-4">
+          <a href="study.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
+            <div class="card-luxury-img-wrapper">
+              <img src="assets/img/console_table/French-Style-Royal-Console-Table-CNS-0024-A-jpg.webp" alt="Study Tables" class="card-luxury-img" style="height:350px;">
+            </div>
+            <div class="p-4 flex justify-between items-center bg-white">
+              <h3 class="text-base font-heading text-luxeBlack font-bold">Study Tables</h3>
+              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
+            </div>
+          </a>
+        </div>
+
       </div>
 
       <!-- View All CTA -->
@@ -309,9 +302,10 @@ include 'header.php';
 
       <!-- Gallery Grid -->
       <div class="row g-4" id="galleryMasterpieces">
-        <div class="col-md-4 gallery-item bed gsap-reveal">
+        <!-- Item 1 -->
+        <div class="col-6 col-md-4 gallery-item bed gsap-reveal">
           <div class="relative overflow-hidden group">
-            <img src="assets/img/bedroom_furniture/Premium-Bedroom-Set-with-Modern-Home-scaled.webp" alt="Imperial King Bed" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="assets/img/bedroom_furniture/Premium-Bedroom-Set-with-Modern-Home-scaled.webp" alt="Imperial King Bed" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
               <h4 class="font-heading text-lg text-luxeBlack">Imperial Carved King Bed</h4>
               <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Burmese Teak & 24K Gilding</p>
@@ -320,9 +314,10 @@ include 'header.php';
           </div>
         </div>
 
-        <div class="col-md-4 gallery-item sofa gsap-reveal">
+        <!-- Item 2 -->
+        <div class="col-6 col-md-4 gallery-item sofa gsap-reveal">
           <div class="relative overflow-hidden group">
-            <img src="assets/img/Sofa_Set_Design/6-Seater-Glossy-Finish-Sofa-Set-YT-303.webp" alt="Baroque Velvet Sofa Set" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="assets/img/Sofa_Set_Design/6-Seater-Glossy-Finish-Sofa-Set-YT-303.webp" alt="Baroque Velvet Sofa Set" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
               <h4 class="font-heading text-lg text-luxeBlack">Baroque Deep Velvet Sofa Set</h4>
               <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Bentley Home Luxury Concept</p>
@@ -331,9 +326,10 @@ include 'header.php';
           </div>
         </div>
 
-        <div class="col-md-4 gallery-item dining gsap-reveal">
+        <!-- Item 3 -->
+        <div class="col-6 col-md-4 gallery-item dining gsap-reveal">
           <div class="relative overflow-hidden group">
-            <img src="assets/img/Dining_furniture/Gold-Brown-Dual-Shade-4-Seater-Dining-Set-Custom-Made-scaled.webp" alt="Grand Palace Dining Ensemble" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="assets/img/Dining_furniture/Gold-Brown-Dual-Shade-4-Seater-Dining-Set-Custom-Made-scaled.webp" alt="Grand Palace Dining Ensemble" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
               <h4 class="font-heading text-lg text-luxeBlack">Grand Palace Dining Table</h4>
               <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">White Calacatta Marble Top</p>
@@ -342,9 +338,10 @@ include 'header.php';
           </div>
         </div>
 
-        <div class="col-md-4 gallery-item throne gsap-reveal">
+        <!-- Item 4 -->
+        <div class="col-6 col-md-4 gallery-item throne gsap-reveal">
           <div class="relative overflow-hidden group">
-            <img src="assets/img/gurujichair/Customized-Wooden-Guru-Ji-Chair-Royal-Sofa-Chair.webp" alt="Gilded Teak Throne" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="assets/img/gurujichair/Customized-Wooden-Guru-Ji-Chair-Royal-Sofa-Chair.webp" alt="Gilded Teak Throne" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
               <h4 class="font-heading text-lg text-luxeBlack">Gilded Teak Throne Chair</h4>
               <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Palace Entrance Masterpiece</p>
@@ -353,9 +350,10 @@ include 'header.php';
           </div>
         </div>
 
-        <div class="col-md-4 gallery-item bed gsap-reveal">
+        <!-- Item 5 -->
+        <div class="col-6 col-md-4 gallery-item bed gsap-reveal">
           <div class="relative overflow-hidden group">
-            <img src="assets/img/bedroom_furniture/Buy-Royal-Beds-Online-at-Best-Prices-side-drawers-scaled.webp" alt="Crown Tufted Canopy Bed" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="assets/img/bedroom_furniture/Buy-Royal-Beds-Online-at-Best-Prices-side-drawers-scaled.webp" alt="Crown Tufted Canopy Bed" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
               <h4 class="font-heading text-lg text-luxeBlack">Crown Tufted Canopy Bed</h4>
               <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Bespoke Royal Bedding</p>
@@ -364,9 +362,10 @@ include 'header.php';
           </div>
         </div>
 
-        <div class="col-md-4 gallery-item sofa gsap-reveal">
+        <!-- Item 6 -->
+        <div class="col-6 col-md-4 gallery-item sofa gsap-reveal">
           <div class="relative overflow-hidden group">
-            <img src="assets/img/Sofa_Set_Design/Classic-Rajwada-Sofa-Set-E.jpg" alt="Chesterfield Royal Sectional" class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="assets/img/Sofa_Set_Design/Classic-Rajwada-Sofa-Set-E.jpg" alt="Chesterfield Royal Sectional" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
             <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
               <h4 class="font-heading text-lg text-luxeBlack">Chesterfield Royal Lounge</h4>
               <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Custom High-End Panel Fit</p>
@@ -374,9 +373,81 @@ include 'header.php';
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+
+        <!-- Item 7 -->
+        <div class="col-6 col-md-4 gallery-item throne gsap-reveal">
+          <div class="relative overflow-hidden group">
+            <img src="assets/img/temple/2026-Hindu-Puja-Mandir-Design-for-home.webp" alt="Hindu Puja Mandir" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+              <h4 class="font-heading text-lg text-luxeBlack">Hindu Puja Mandir</h4>
+              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Teakwood Spiritual Sanctuary</p>
+              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="col-6 col-md-4 gallery-item sofa gsap-reveal">
+          <div class="relative overflow-hidden group">
+            <img src="assets/img/swing_design/Buy-a-strong-durable-and-long-lasting-wooden-swing.webp" alt="Royal Peacock Swing" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+              <h4 class="font-heading text-lg text-luxeBlack">Royal Peacock Swing</h4>
+              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Handcrafted Solid Teak Swing</p>
+              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="col-6 col-md-4 gallery-item dining gsap-reveal">
+          <div class="relative overflow-hidden group">
+            <img src="assets/img/partition_and_decorative/Classic-Room-Separator-in-Sheesham-Wood-PART-0092-jpg.webp" alt="Classic Rajwada Partition" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+              <h4 class="font-heading text-lg text-luxeBlack">Classic Rajwada Partition</h4>
+              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Sheesham Wood Carved Screen</p>
+              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="col-6 col-md-4 gallery-item throne gsap-reveal">
+          <div class="relative overflow-hidden group">
+            <img src="assets/img/gurujichair/Aesthetic-Lion-Faced-Guru-Ji-Chair-1.webp" alt="Aesthetic Lion Throne" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+              <h4 class="font-heading text-lg text-luxeBlack">Aesthetic Lion Throne</h4>
+              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">24K Gilded Gaddi Singhasan</p>
+              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 11 -->
+        <div class="col-6 col-md-4 gallery-item bed gsap-reveal">
+          <div class="relative overflow-hidden group">
+            <img src="assets/img/door_Design/Cut-Work-Style-Door-Design.webp" alt="Cut-Work Designer Door" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+              <h4 class="font-heading text-lg text-luxeBlack">Cut-Work Designer Door</h4>
+              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Grand Entrance Teak Door</p>
+              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 12 -->
+        <div class="col-6 col-md-4 gallery-item dining gsap-reveal">
+          <div class="relative overflow-hidden group">
+            <img src="assets/img/console_table/French-Style-Royal-Console-Table-CNS-0024-A-jpg.webp" alt="French Entryway Console" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+              <h4 class="font-heading text-lg text-luxeBlack">French Entryway Console</h4>
+              <p class="text-luxeGold text-xs tracking-wider uppercase mb-3">Baroque Carved Entryway Table</p>
+              <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
+            </div>
+          </div>
+        </div> <!-- col-6 -->
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </section> <!-- section -->
 
   <!-- Section 4: Why Choose Us -->
   <section class="py-20 bg-white border-y border-[rgba(197,168,128,0.25)] relative">
@@ -576,7 +647,7 @@ include 'header.php';
 
       <div class="row g-4 justify-center">
         <!-- Step 1 -->
-        <div class="col-lg-3 col-md-6 text-center gsap-reveal">
+        <div class="col-6 col-md-6 col-lg-3 text-center gsap-reveal">
           <div class="p-6 relative">
             <span class="font-heading text-6xl text-[rgba(212,175,55,0.1)] block mb-4 font-bold">01</span>
             <h3 class="font-heading text-luxeBlack text-xl mb-3">Consultation</h3>
@@ -587,7 +658,7 @@ include 'header.php';
         </div>
 
         <!-- Step 2 -->
-        <div class="col-lg-3 col-md-6 text-center gsap-reveal">
+        <div class="col-6 col-md-6 col-lg-3 text-center gsap-reveal">
           <div class="p-6 relative">
             <span class="font-heading text-6xl text-[rgba(212,175,55,0.1)] block mb-4 font-bold">02</span>
             <h3 class="font-heading text-luxeBlack text-xl mb-3">Design & Approval</h3>
@@ -598,7 +669,7 @@ include 'header.php';
         </div>
 
         <!-- Step 3 -->
-        <div class="col-lg-3 col-md-6 text-center gsap-reveal">
+        <div class="col-6 col-md-6 col-lg-3 text-center gsap-reveal">
           <div class="p-6 relative">
             <span class="font-heading text-6xl text-[rgba(212,175,55,0.1)] block mb-4 font-bold">03</span>
             <h3 class="font-heading text-luxeBlack text-xl mb-3">Handcrafting</h3>
@@ -609,7 +680,7 @@ include 'header.php';
         </div>
 
         <!-- Step 4 -->
-        <div class="col-lg-3 col-md-6 text-center gsap-reveal">
+        <div class="col-6 col-md-6 col-lg-3 text-center gsap-reveal">
           <div class="p-6 relative">
             <span class="font-heading text-6xl text-[rgba(212,175,55,0.1)] block mb-4 font-bold">04</span>
             <h3 class="font-heading text-luxeBlack text-xl mb-3">White-Glove Install</h3>
@@ -747,19 +818,19 @@ include 'header.php';
         <form class="luxury-form row g-4">
           <div class="col-md-6">
             <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Full Name</label>
-            <input type="text" required class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+            <input type="text" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
           </div>
           <div class="col-md-6">
             <label class="form-label text-xs uppercase tracking-widest text-luxeGold">E-Mail Coordinates</label>
-            <input type="email" required class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+            <input type="email" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
           </div>
           <div class="col-md-6">
             <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Contact Line</label>
-            <input type="tel" required class="form-control bg-transparent text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+            <input type="tel" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
           </div>
           <div class="col-md-6">
             <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Primary Collection Interest</label>
-            <select class="form-select bg-white text-luxeBlack border-0 border-b border-[rgba(197,168,128,0.3)] rounded-0 px-0 py-2 focus:bg-white focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+            <select class="form-select bg-white text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-white focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               <option value="bedroom">Royal Bedroom Collections</option>
               <option value="sofa">Luxury Sofa Sets</option>
               <option value="dining">Designer Dining Hall</option>

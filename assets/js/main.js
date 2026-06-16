@@ -105,18 +105,41 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 4. Slide-out Inquiry Drawer Controls
+  // 4. Slide-out Inquiry Drawer Controls / WhatsApp Redirect
   const inquiryBtns = document.querySelectorAll(".trigger-inquiry");
   const drawer = document.getElementById("inquiryDrawer");
   const overlay = document.getElementById("drawerOverlay");
   const closeBtn = document.getElementById("drawerClose");
 
-  const openDrawer = () => {
-    if (drawer && overlay) {
-      drawer.classList.add("active");
-      overlay.classList.add("active");
-      document.body.style.overflow = "hidden"; // disable background scroll
+  const openDrawer = (e) => {
+    if (e) e.preventDefault();
+    const btn = e ? e.currentTarget : null;
+    let text = "Hello FurnishHut Royalty Concierge, I wish to inquire about custom bespoke furniture options.";
+    
+    // Check if there is a pre-set message in the message input (e.g., from lookbook hotspot clicks)
+    const inquiryMessageInput = document.getElementById("inquiryMessageInput");
+    if (inquiryMessageInput && inquiryMessageInput.value.trim() !== "") {
+      text = inquiryMessageInput.value.trim();
+      inquiryMessageInput.value = ""; // clear it for next time
+    } else if (btn) {
+      // Find title of nearest card or group if possible
+      const card = btn.closest('.card-luxury') || btn.closest('.relative.overflow-hidden.group');
+      let name = "";
+      if (card) {
+        const titleEl = card.querySelector('h3, h4');
+        if (titleEl) name = titleEl.textContent.trim();
+      }
+      if (name) {
+        text = `Hello FurnishHut Royalty Concierge, I am interested in: ${name}. Please share details.`;
+      } else {
+        const btnText = btn.textContent.trim();
+        if (btnText && btnText !== "Inquire Bespoke" && btnText !== "Bespoke Inquiry" && btnText !== "Request Custom Design" && btnText !== "Book Consultation" && btnText !== "Inquire →") {
+          text = `Hello FurnishHut Royalty Concierge, I wish to inquire about: ${btnText}.`;
+        }
+      }
     }
+    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   const closeDrawer = () => {
@@ -130,6 +153,13 @@ document.addEventListener("DOMContentLoaded", () => {
   inquiryBtns.forEach(btn => btn.addEventListener("click", openDrawer));
   if (closeBtn) closeBtn.addEventListener("click", closeDrawer);
   if (overlay) overlay.addEventListener("click", closeDrawer);
+
+  // Define global prefillInquiry function to redirect directly to WhatsApp
+  window.prefillInquiry = function(productName, optionType) {
+    const text = `Hello FurnishHut Royalty Concierge, I am interested in inquiring about the "${productName}" (${optionType}).`;
+    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank');
+  };
 
   // 5. Custom Material Selector Form Logic
   const materialChips = document.querySelectorAll(".material-chip");
