@@ -276,7 +276,7 @@ include 'header.php';
 
       <!-- View All CTA -->
       <div class="text-center mt-12">
-        <a href="collections.php" class="btn-luxury-filled" style="padding:0.85rem 2.5rem;">View All 15 Categories →</a>
+        <a href="collections.php" class="btn-luxury-filled" style="padding:0.85rem 2.5rem;">View All Collections →</a>
       </div>
 
     </div>
