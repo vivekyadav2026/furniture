@@ -1,11 +1,10 @@
 <?php
 $page_title = "Contact Concierge | FurnishHut Flagship Showrooms";
-$page_description = "Contact FurnishHut's private concierge. Book a virtual showroom tour or schedule a physical consultation at our Milan, Mayfair, or Dubai salons.";
+$page_description = "Contact FurnishHut's private concierge. Book a virtual showroom tour or schedule a physical consultation at our Saharanpur head office.";
 include 'header.php';
 ?>
 
   
-
 
   <!-- Banner Header -->
   <section class="relative py-24 bg-luxeCream overflow-hidden flex items-center justify-center">
@@ -32,27 +31,11 @@ include 'header.php';
           
           <div class="space-y-6 text-sm">
             <div>
-              <h4 class="font-heading text-luxeGold text-lg font-semibold">Milan Design HQ Atelier</h4>
+              <h4 class="font-heading text-luxeGold text-lg font-semibold">Saharanpur Head Office</h4>
               <p class="text-xs text-gray-500 mt-1 leading-relaxed">
-                Via della Spiga, 14, Milan, Italy<br>
+                U.P Saharanpur pin. 247001<br>
                 Hours: Mon &ndash; Sat: 10:00 &ndash; 19:00 (Private invitation only)<br>
-                Call: +39 02 8976 5431
-              </p>
-            </div>
-            <div>
-              <h4 class="font-heading text-luxeGold text-lg font-semibold">London Mayfair Gallery</h4>
-              <p class="text-xs text-gray-500 mt-1 leading-relaxed">
-                Bruton Street, Mayfair, London W1S<br>
-                Hours: Mon &ndash; Fri: 10:00 &ndash; 18:00 (Invitation only)<br>
-                Call: +44 20 7946 0912
-              </p>
-            </div>
-            <div>
-              <h4 class="font-heading text-luxeGold text-lg font-semibold">Dubai Middle East Salon</h4>
-              <p class="text-xs text-gray-500 mt-1 leading-relaxed">
-                Downtown Boulevard, Dubai, UAE<br>
-                Hours: Daily: 11:00 &ndash; 21:00 (Invitation only)<br>
-                Call: +971 4 366 1111
+                Call: +91 90680 47086
               </p>
             </div>
           </div>
@@ -77,9 +60,7 @@ include 'header.php';
                 <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Consultation Type</label>
                 <select class="form-select bg-white text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-white focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
                   <option value="virtual">Virtual Zoom Design Session</option>
-                  <option value="milan">Milan Flagship In-person</option>
-                  <option value="london">London Mayfair In-person</option>
-                  <option value="dubai">Dubai Salon In-person</option>
+                  <option value="saharanpur">Saharanpur Head Office In-person</option>
                 </select>
               </div>
               <div class="col-md-6">

@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }
     }
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(text)}`;
+    const whatsappUrl = `https://wa.me/918006005730?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Define global prefillInquiry function to redirect directly to WhatsApp
   window.prefillInquiry = function(productName, optionType) {
     const text = `Hello FurnishHut Royalty Concierge, I am interested in inquiring about the "${productName}" (${optionType}).`;
-    const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(text)}`;
+    const whatsappUrl = `https://wa.me/918006005730?text=${encodeURIComponent(text)}`;
     window.open(whatsappUrl, '_blank');
   };
 

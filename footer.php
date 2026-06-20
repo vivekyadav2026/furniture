@@ -38,7 +38,7 @@
 
         <div class="col-lg-4">
           <h4 class="text-xs uppercase tracking-[0.2em] text-luxeBlack font-semibold mb-4">Concierge Desk</h4>
-          <p class="text-xs text-gray-500 mb-4 leading-relaxed">Milan Head Office: Via della Spiga, 14, Milan, Italy<br>International Line: +39 02 8976 5431</p>
+          <p class="text-xs text-gray-500 mb-4 leading-relaxed">Head Office: U.P Saharanpur pin. 247001<br>Inquiry Line: +91 90680 47086</p>
           <form class="luxury-form flex border-b border-[rgba(197,168,128,0.4)] pb-2">
             <input type="email" placeholder="JOIN PRIVATE LIST" required class="bg-transparent text-xs w-full text-luxeBlack border-0 outline-none placeholder:text-zinc-600 focus:ring-0">
             <button type="submit" class="text-luxeGold text-xs tracking-widest uppercase">Subscribe</button>
@@ -64,15 +64,15 @@
   <!-- Floating Sticky Action CTAs -->
   <div class="floating-actions">
     <!-- WhatsApp -->
-    <a href="https://wa.me/919876543210?text=Hello%20FurnishHut%20Royalty%20Concierge,%20I%20wish%20to%20inquire%20about%20a%20luxury%20furniture%20piece." target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
+    <a href="https://wa.me/918006005730?text=Hello%20FurnishHut%20Royalty%20Concierge,%20I%20wish%20to%20inquire%20about%20a%20luxury%20furniture%20piece." target="_blank" class="floating-btn whatsapp-btn" title="Chat on WhatsApp">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 2c-5.506 0-9.988 4.478-9.988 9.984 0 1.76.459 3.479 1.332 5.002L2 22l5.163-1.353c1.468.802 3.125 1.222 4.838 1.222.012 0 .021 0 .033-.001 5.505 0 9.987-4.478 9.987-9.984 0-2.67-1.036-5.18-2.92-7.065C17.22 3.037 14.708 2 12.012 2zm5.799 14.341c-.244.688-1.218 1.25-1.688 1.334-.413.076-.948.13-2.83-.65-2.404-.995-3.923-3.456-4.043-3.616-.12-.16-.975-1.297-.975-2.47 0-1.173.614-1.748.832-1.97.218-.223.477-.279.637-.279.16 0 .319.002.458.008.147.006.345-.056.54.422.203.493.693 1.693.754 1.817.06.124.1.268.016.434-.084.167-.127.268-.255.42-.127.153-.267.34-.382.456-.127.128-.261.267-.112.522.15.255.663 1.093 1.42 1.767.978.871 1.798 1.139 2.053 1.266.255.127.402.107.553-.067.15-.174.646-.752.821-1.008.174-.255.348-.215.587-.127.24.088 1.517.717 1.777.847.26.13.433.195.497.302.064.108.064.621-.18 1.309z"/></svg>
     </a>
     <!-- Call -->
-    <a href="tel:+390289765431" class="floating-btn" title="Call Showroom Office">
+    <a href="tel:+919068047086" class="floating-btn" title="Call Showroom Office">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     </a>
     <!-- Instagram -->
-    <a href="https://instagram.com" target="_blank" class="floating-btn" title="Browse Instagram Feed">
+    <a href="https://www.instagram.com/furnishhut91?igsh=ZDhoa3dyYXQ2cjk4" target="_blank" class="floating-btn" title="Browse Instagram Feed">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
     </a>
   </div>

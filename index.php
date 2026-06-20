@@ -471,6 +471,53 @@ include 'header.php';
     </div>
   </section>
 
+  <!-- Section 4.5: Signature Timbers -->
+  <section class="py-24 bg-white relative border-b border-[rgba(197,168,128,0.25)]">
+    <div class="container mx-auto px-4 max-w-7xl">
+      <div class="text-center mb-16">
+        <span class="text-luxeGold text-xs tracking-[0.3em] uppercase block mb-2 font-semibold">The Foundation of Royalty</span>
+        <h2 class="text-3xl md:text-5xl font-heading text-luxeBlack">Our Signature Timbers</h2>
+        <div class="w-24 h-[1px] bg-luxeGold mx-auto mt-4"></div>
+      </div>
+
+      <div class="row g-4 justify-center">
+        <!-- Teak Wood Card -->
+        <div class="col-12 col-md-6 gsap-reveal">
+          <div class="relative overflow-hidden group border border-[rgba(197,168,128,0.25)] shadow-md" style="height: 380px;">
+            <img src="assets/img/teak_wood.png" alt="Premium Teak Wood" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <!-- Dark Vignette Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <!-- Content Overlaid -->
+            <div class="absolute bottom-0 left-0 p-8 text-left">
+              <h3 class="text-2xl md:text-3xl font-heading text-white mb-2">Premium Teak Wood</h3>
+              <p class="text-xs text-luxeGold tracking-[0.2em] uppercase mb-3 font-semibold">100% Seasoned Burmese Teak</p>
+              <p class="text-xs text-gray-300 leading-relaxed max-w-md">
+                Renowned for its natural oil content, exceptional durability, and resistance to elements, our premium teakwood is sourced from sustainable state forests and hand-seasoned to perfection.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sheesham Wood Card -->
+        <div class="col-12 col-md-6 gsap-reveal">
+          <div class="relative overflow-hidden group border border-[rgba(197,168,128,0.25)] shadow-md" style="height: 380px;">
+            <img src="assets/img/sheesham_wood.png" alt="Solid Sheesham" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <!-- Dark Vignette Overlay -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+            <!-- Content Overlaid -->
+            <div class="absolute bottom-0 left-0 p-8 text-left">
+              <h3 class="text-2xl md:text-3xl font-heading text-white mb-2">Solid Sheesham</h3>
+              <p class="text-xs text-luxeGold tracking-[0.2em] uppercase mb-3 font-semibold">Indestructible Indian Rosewood</p>
+              <p class="text-xs text-gray-300 leading-relaxed max-w-md">
+                Featuring rich swirly dark grain patterns and exceptional density, our solid Sheesham wood provides heavy, heirloom-grade stability with natural immunity to wood bores.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Section 5: Luxury Craftsmanship Experience Timeline -->
   <section class="py-24 bg-luxeCream relative">
     <div class="container mx-auto px-4 max-w-5xl">

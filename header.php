@@ -59,10 +59,10 @@
   <div id="topBar" style="background:#7B1C2E; padding:7px 0; overflow:hidden; position:relative;">
     <div class="marquee-track" style="display:flex; white-space:nowrap; animation: marqueeScroll 28s linear infinite;">
       <span style="color:#fff; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; font-family:'DM Sans',sans-serif; font-weight:500; padding:0 3rem;">
-        ✦ &nbsp; Luxury Handcrafted Furniture &nbsp;&nbsp;|&nbsp;&nbsp; 100% Solid Teak &amp; Rosewood &nbsp;&nbsp;|&nbsp;&nbsp; Custom Designs Available &nbsp;&nbsp;|&nbsp;&nbsp; 📞 +91-98765-43210 &nbsp;&nbsp;|&nbsp;&nbsp; Global Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp; Palace-Grade Artistry Since 2004 &nbsp;&nbsp;|
+        ✦ &nbsp; Luxury Handcrafted Furniture &nbsp;&nbsp;|&nbsp;&nbsp; 100% Solid Teak &amp; Rosewood &nbsp;&nbsp;|&nbsp;&nbsp; Custom Designs Available &nbsp;&nbsp;|&nbsp;&nbsp; 📞 +91-90680-47086 &nbsp;&nbsp;|&nbsp;&nbsp; Global Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp; Palace-Grade Artistry Since 2004 &nbsp;&nbsp;|
       </span>
       <span style="color:#fff; font-size:10px; letter-spacing:0.28em; text-transform:uppercase; font-family:'DM Sans',sans-serif; font-weight:500; padding:0 3rem;">
-        ✦ &nbsp; Luxury Handcrafted Furniture &nbsp;&nbsp;|&nbsp;&nbsp; 100% Solid Teak &amp; Rosewood &nbsp;&nbsp;|&nbsp;&nbsp; Custom Designs Available &nbsp;&nbsp;|&nbsp;&nbsp; 📞 +91-98765-43210 &nbsp;&nbsp;|&nbsp;&nbsp; Global Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp; Palace-Grade Artistry Since 2004 &nbsp;&nbsp;|
+        ✦ &nbsp; Luxury Handcrafted Furniture &nbsp;&nbsp;|&nbsp;&nbsp; 100% Solid Teak &amp; Rosewood &nbsp;&nbsp;|&nbsp;&nbsp; Custom Designs Available &nbsp;&nbsp;|&nbsp;&nbsp; 📞 +91-90680-47086 &nbsp;&nbsp;|&nbsp;&nbsp; Global Delivery Available &nbsp;&nbsp;|&nbsp;&nbsp; Palace-Grade Artistry Since 2004 &nbsp;&nbsp;|
       </span>
     </div>
   </div>
@@ -115,11 +115,11 @@
             <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             <span>Account</span>
           </a>
-          <a href="https://wa.me/919876543210" target="_blank" class="fh-icon-link">
+          <a href="https://wa.me/918006005730" target="_blank" class="fh-icon-link">
             <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             <span>Wishlist</span>
           </a>
-          <a href="tel:+919876543210" class="fh-icon-link">
+          <a href="tel:+919068047086" class="fh-icon-link">
             <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.13 12 19.79 19.79 0 0 1 1.08 3.18 2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91A16 16 0 0 0 13 14.82l1.27-1.27a2 2 0 0 1 2.11-.45c.907.34 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             <span>Call Us</span>
           </a>
