@@ -594,6 +594,41 @@ include 'header.php';
     </div>
   </section>
 
+  <!-- Meet the Founder -->
+  <section class="py-24 bg-white border-t border-[rgba(197,168,128,0.25)]">
+    <div class="container mx-auto px-4 max-w-7xl">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5 gsap-reveal-left">
+          <div class="border border-[rgba(197,168,128,0.3)] p-4 relative">
+            <div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-luxeGold z-0"></div>
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 border-b-2 border-r-2 border-luxeGold z-0"></div>
+            <img src="assets/img/founder.jpg" alt="Shujaurrehman - Founder of FurnishHut" class="w-full h-auto object-cover relative z-10" style="min-height: 400px; background: #f4f4f4;" onerror="this.src='https://via.placeholder.com/400x500?text=Founder+Image'">
+          </div>
+        </div>
+        <div class="col-lg-7 gsap-reveal-right lg:pl-12">
+          <span class="text-luxeGold text-xs tracking-[0.3em] uppercase block mb-2 font-semibold">The Visionary</span>
+          <h2 class="text-3xl md:text-5xl font-heading text-luxeBlack mb-2">Shujaurrehman</h2>
+          <p class="text-luxeGold text-sm font-semibold tracking-widest uppercase mb-6">Founder of FurnishHut</p>
+          
+          <p class="text-sm leading-relaxed mb-6">
+            With <strong>5 years of experience</strong> in wooden carving furniture, Shujaurrehman has built FurnishHut on the foundation of passion and precision. At FurnishHut, we proudly carry forward the rich heritage of Saharanpur's world-famous wood carving craftsmanship.
+          </p>
+          <p class="text-sm leading-relaxed mb-8">
+            As a trusted manufacturer of premium handcrafted furniture, we combine traditional artistry with superior quality to create furniture that brings elegance, durability, and luxury to every home.
+          </p>
+          
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start text-sm font-medium"><i class="fa-solid fa-check text-success mt-1 mr-3 text-base"></i> Authentic Saharanpur Handcrafted Furniture</li>
+            <li class="flex items-start text-sm font-medium"><i class="fa-solid fa-check text-success mt-1 mr-3 text-base"></i> Premium Quality Solid Wood</li>
+            <li class="flex items-start text-sm font-medium"><i class="fa-solid fa-check text-success mt-1 mr-3 text-base"></i> Skilled Master Artisans with Generations of Experience</li>
+            <li class="flex items-start text-sm font-medium"><i class="fa-solid fa-check text-success mt-1 mr-3 text-base"></i> Customized Designs & Fine Detailing</li>
+            <li class="flex items-start text-sm font-medium"><i class="fa-solid fa-check text-success mt-1 mr-3 text-base"></i> Trusted by Customers Across India</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Section 11: Premium Lead Generation Form -->
   <section class="py-24 bg-luxeCream relative">
     <div class="container mx-auto px-4 max-w-4xl">
