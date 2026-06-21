@@ -1,4 +1,13 @@
 <?php
+require_once __DIR__ . '/config/db.php';
+
+// Fetch all categories for navigation
+try {
+    $stmt = $pdo->query("SELECT * FROM categories ORDER BY name ASC");
+    $db_categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    $db_categories = [];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -83,22 +92,10 @@
         <div class="fh-search-bar">
           <div class="fh-search-select-wrap">
             <select id="catSearch" class="fh-search-select">
-              <option>All Categories</option>
-              <option>Royal Beds</option>
-              <option>Sofa Sets</option>
-              <option>Console Tables</option>
-              <option>Dining Sets</option>
-              <option>Accent Chairs</option>
-              <option>Centre Tables</option>
-              <option>Swings</option>
-              <option>Mirrors</option>
-              <option>Pooja Mandirs</option>
-              <option>Rocking Chairs</option>
-              <option>Designer Doors</option>
-              <option>Partitions</option>
-              <option>Guruji Chair</option>
-              <option>Office Furniture</option>
-              <option>Study Tables</option>
+              <option value="">All Categories</option>
+              <?php foreach ($db_categories as $cat): ?>
+                  <option value="<?= htmlspecialchars($cat['slug']) ?>"><?= htmlspecialchars($cat['name']) ?></option>
+              <?php endforeach; ?>
             </select>
             <svg class="fh-select-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="#7B1C2E" stroke-width="1.5" stroke-linecap="round"/></svg>
           </div>
@@ -134,13 +131,9 @@
         <!-- Mobile menu -->
       <div id="fhMobileNav" style="display:none; background:#7B1C2E; flex-direction:column; padding:0.5rem 1.2rem 1rem;">
         <a href="index.php" class="fh-mob-link">Home</a>
-        <a href="bedroom.php" class="fh-mob-link">Bed</a>
-        <a href="sofa.php" class="fh-mob-link">Sofa</a>
-        <a href="dining.php" class="fh-mob-link">Dining</a>
-        <a href="throne.php" class="fh-mob-link">Chair</a>
-        <a href="custom.php" class="fh-mob-link">Custom Order</a>
-        <a href="partition.php" class="fh-mob-link">Partitions</a>
-        <a href="mirrors.php" class="fh-mob-link">Mirrors</a>
+        <?php foreach ($db_categories as $cat): ?>
+            <a href="category.php?slug=<?= htmlspecialchars($cat['slug']) ?>" class="fh-mob-link"><?= htmlspecialchars($cat['name']) ?></a>
+        <?php endforeach; ?>
         <a href="collections.php" class="fh-mob-link">All Collections</a>
         <a href="contact.php" class="fh-mob-link" style="border-bottom:none;">Contact</a>
       </div>
@@ -150,30 +143,23 @@
     <div id="bottomNav" style="background:#7B1C2E; border-bottom:2px solid #C5A880;">
       <div class="fh-bottom-nav-inner" id="fhDesktopNav">
         <div class="fh-nav-item"><a href="index.php">Home</a></div>
-        <div class="fh-nav-item fh-has-drop">
-          <a href="bedroom.php">Bed </a>
-        </div>
-        <div class="fh-nav-item fh-has-drop">
-          <a href="sofa.php">Sofa </a>
-        </div>
-        <div class="fh-nav-item"><a href="console.php">Console Table</a></div>
-        <div class="fh-nav-item fh-has-drop">
-          <a href="dining.php">Dining </a>
-        </div>
-        <div class="fh-nav-item fh-has-drop">
-          <a href="throne.php">Chair </a>
-        </div>
-        <div class="fh-nav-item"><a href="swing.php">Swing</a></div>
-        <div class="fh-nav-item"><a href="partition.php">Partitions</a></div>
-        <div class="fh-nav-item"><a href="mirrors.php">Mirrors</a></div>
-        <div class="fh-nav-item"><a href="mandir.php">Mandir</a></div>
-        <div class="fh-nav-item"><a href="doors.php">Doors</a></div>
+        <?php 
+        // Display up to 8 categories in main nav, rest in 'More' dropdown
+        $main_nav = array_slice($db_categories, 0, 8);
+        $more_nav = array_slice($db_categories, 8);
+        ?>
+        <?php foreach ($main_nav as $cat): ?>
+            <div class="fh-nav-item">
+              <a href="category.php?slug=<?= htmlspecialchars($cat['slug']) ?>"><?= htmlspecialchars($cat['name']) ?></a>
+            </div>
+        <?php endforeach; ?>
+        
         <div class="fh-nav-item fh-has-drop">
           <a href="collections.php">More </a>
-          <div class="fh-dropdown">
-            <a href="partition.php">Partition Designs</a>
-            <a href="office.php">Office Furniture</a>
-            <a href="study.php">Study Tables</a>
+          <div class="fh-dropdown fh-dropdown-right">
+            <?php foreach ($more_nav as $cat): ?>
+                <a href="category.php?slug=<?= htmlspecialchars($cat['slug']) ?>"><?= htmlspecialchars($cat['name']) ?></a>
+            <?php endforeach; ?>
             <a href="gallery.php">Lookbook</a>
             <a href="projects.php">Projects</a>
             <a href="blog.php">Blog</a>

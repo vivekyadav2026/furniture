@@ -47,30 +47,49 @@ include 'header.php';
             <h3 class="font-heading text-2xl text-luxeGold mb-3 uppercase text-center">Book Salon Consultation</h3>
             <p class="text-xs text-gray-500 text-center uppercase tracking-widest mb-6">Secure a physical or virtual design slot</p>
             
-            <form class="luxury-form row g-3">
+            <form id="contactForm" class="luxury-form row g-3">
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Full Name</label>
-                <input type="text" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <input type="text" name="name" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               </div>
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Email</label>
-                <input type="email" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <input type="email" name="email" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               </div>
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Consultation Type</label>
-                <select class="form-select bg-white text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-white focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <select name="type" class="form-select bg-white text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-white focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
                   <option value="virtual">Virtual Zoom Design Session</option>
                   <option value="saharanpur">Saharanpur Head Office In-person</option>
                 </select>
               </div>
               <div class="col-md-6">
                 <label class="form-label text-xs uppercase tracking-widest text-luxeGold">Target Date</label>
-                <input type="date" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
+                <input type="date" name="date" required class="form-control bg-transparent text-luxeBlack border border-[rgba(197,168,128,0.5)] rounded-sm bg-white/50 rounded-0 px-0 py-2 focus:bg-transparent focus:text-luxeBlack focus:border-b-2 focus:border-luxeGold focus:shadow-none focus:outline-none">
               </div>
               <div class="col-12 mt-4">
                 <button type="submit" class="btn-luxury-filled w-full">Request Invitation</button>
               </div>
             </form>
+            
+            <script>
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = this.elements['name'].value;
+                const email = this.elements['email'].value;
+                const type = this.elements['type'].options[this.elements['type'].selectedIndex].text;
+                const date = this.elements['date'].value;
+                
+                let text = "Hello! I would like to book a Salon Consultation.\n\n";
+                text += "Name: " + name + "\n";
+                text += "Email: " + email + "\n";
+                text += "Type: " + type + "\n";
+                text += "Target Date: " + date;
+                
+                const url = "https://wa.me/919068047086?text=" + encodeURIComponent(text);
+                window.location.href = url;
+            });
+            </script>
           </div>
         </div>
       </div>

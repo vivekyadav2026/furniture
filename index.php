@@ -90,187 +90,27 @@ include 'header.php';
       <!-- Grid of all 15 categories -->
       <div class="row g-5">
 
-        <!-- Category 1 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="bedroom.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/bedroom_furniture/Luxury-Teak-Wood-Bed-with-Storage-scaled.webp" alt="Royal Beds" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Royal Beds</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 2 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="sofa.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/Sofa_Set_Design/10-Seater-Royal-Concept-Sofa-Set-YT-582.webp" alt="Luxury Sofa Sets" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Luxury Sofa Sets</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 3 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="dining.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/Dining_furniture/04-Seater-Royal-Dining-Table-Set-at-Factory-Price-1.webp" alt="Dining Sets" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Dining Sets</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 4 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="console.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/console_table/Baroque-Style-Console-Table-jpg.webp" alt="Console Tables" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Console Tables</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 5 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="throne.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/gurujichair/Aarsun-Guruji-chair-jpg.webp" alt="Accent Chairs" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Accent Chairs</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 6 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="#" class="card-luxury block cursor-pointer trigger-inquiry" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/console_table/Designer-Wooden-Console-B.jpg" alt="Centre Tables" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Centre Tables</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Inquire &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 7 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="swing.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/swing_design/Buy-a-strong-durable-and-long-lasting-wooden-swing.webp" alt="Royal Swings" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Royal Swings</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 8 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="mirrors.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/partition_and_decorative/Antique-Style-Room-Divider-UH-PART-0087-jpg.webp" alt="Ornate Mirrors" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Ornate Mirrors</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 9 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="mandir.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/temple/08-Feet-Home-Temple-Design-2.webp" alt="Pooja Mandirs" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Pooja Mandirs</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 11 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="doors.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/door_Design/Cut-Work-Style-Door-Design.webp" alt="Designer Doors" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Designer Doors</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 12 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="partition.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/partition_and_decorative/Carved-Grapes-Pattern-Room-Divider-UH-PART-0084-jpg.webp" alt="Partition Designs" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Partition Designs</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 13 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="guruji.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/gurujichair/Aesthetic-Lion-Faced-Guru-Ji-Chair-1.webp" alt="Guruji Chair" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Guruji Chair</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 14 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="office.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/Office_furniture/Chairmans-Luxurious-Office-Furniture-2-scaled.webp" alt="Office Furniture" class="card-luxury-img" style="height:350px; object-position:left;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Office Furniture</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 15 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="study.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/console_table/French-Style-Royal-Console-Table-CNS-0024-A-jpg.webp" alt="Study Tables" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Study Tables</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
+        <?php if(empty($db_categories)): ?>
+            <p class="text-center w-full text-gray-500">Categories will be added soon.</p>
+        <?php else: ?>
+            <?php foreach(array_slice($db_categories, 0, 15) as $cat): ?>
+                <div class="col-6 col-md-6 col-lg-4">
+                  <a href="category.php?slug=<?= htmlspecialchars($cat['slug']) ?>" class="card-luxury block cursor-pointer" style="text-decoration:none;">
+                    <div class="card-luxury-img-wrapper">
+                      <?php if ($cat['cover_image']): ?>
+                          <img src="<?= htmlspecialchars($cat['cover_image']) ?>" alt="<?= htmlspecialchars($cat['name']) ?>" class="card-luxury-img" style="height:350px;">
+                      <?php else: ?>
+                          <div style="background:#eee; height:350px; display:flex; align-items:center; justify-content:center;">No Cover</div>
+                      <?php endif; ?>
+                    </div>
+                    <div class="p-4 flex justify-between items-center bg-white">
+                      <h3 class="text-base font-heading text-luxeBlack font-bold"><?= htmlspecialchars($cat['name']) ?></h3>
+                      <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
+                    </div>
+                  </a>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
 
       </div>
 
@@ -292,153 +132,62 @@ include 'header.php';
       </div>
 
       <!-- Gallery Filters -->
+      <!-- Gallery Filters -->
       <?php
-      $gallery_config = [
-          'bed' => [
-              'name' => 'Royal Beds',
-              'folder' => 'assets/img/bedroom_furniture/',
-              'images' => [
-                  'Premium-Bedroom-Set-with-Modern-Home-scaled.webp' => 'Imperial King Bed',
-                  'Buy-Royal-Beds-Online-at-Best-Prices-side-drawers-scaled.webp' => 'Crown Tufted Canopy Bed'
-              ]
-          ],
-          'sofa' => [
-              'name' => 'Luxury Sofas',
-              'folder' => 'assets/img/Sofa_Set_Design/',
-              'images' => [
-                  '6-Seater-Glossy-Finish-Sofa-Set-YT-303.webp' => 'Baroque Velvet Sofa Set',
-                  'Classic-Rajwada-Sofa-Set-E.jpg' => 'Chesterfield Royal Lounge'
-              ]
-          ],
-          'dining' => [
-              'name' => 'Palatial Dining',
-              'folder' => 'assets/img/Dining_furniture/',
-              'images' => [
-                  'Gold-Brown-Dual-Shade-4-Seater-Dining-Set-Custom-Made-scaled.webp' => 'Grand Palace Dining Table',
-                  '04-Seater-Royal-Dining-Table-Set-at-Factory-Price-1.webp' => 'Royal Teakwood Dining Ensemble'
-              ]
-          ],
-          'console' => [
-              'name' => 'Console Tables',
-              'folder' => 'assets/img/console_table/',
-              'images' => [
-                  'Baroque-Style-Console-Table-jpg.webp' => 'Baroque Gold Console Table',
-                  'French-Style-Royal-Console-Table-CNS-0024-A-jpg.webp' => 'French Entryway Console'
-              ]
-          ],
-          'chair' => [
-              'name' => 'Accent Chairs',
-              'folder' => 'assets/img/gurujichair/',
-              'images' => [
-                  'Aarsun-Guruji-chair-jpg.webp' => 'Royal Maharaja Accent Chair',
-                  'Aarsun-Wooden-Guruji-Chair-with-Stool-in-Gold-Polish.webp' => 'Gilded Teak Accent Chair'
-              ]
-          ],
-          'table' => [
-              'name' => 'Centre Tables',
-              'folder' => 'assets/img/console_table/',
-              'images' => [
-                  'Designer-Wooden-Console-B.jpg' => 'Classic Carved Centre Table',
-                  'Wooden-Console.jpg' => 'Solid Teak Salon Centre Table'
-              ]
-          ],
-          'swing' => [
-              'name' => 'Royal Swings',
-              'folder' => 'assets/img/swing_design/',
-              'images' => [
-                  'Buy-a-strong-durable-and-long-lasting-wooden-swing.webp' => 'Royal Peacock Swing',
-                  'Indoor-Carved-Kashmiri-Swing-D-jpg.webp' => 'Indoor Carved Jhoola'
-              ]
-          ],
-          'mirror' => [
-              'name' => 'Ornate Mirrors',
-              'folder' => 'assets/img/console_table/',
-              'images' => [
-                  'Full-Handcrafted-Mirror-Console-Table-0.webp' => 'Full Handcrafted Mirror Console',
-                  'Grand-Console-with-Mirror-Frame-for-Home.jpg' => 'Grand Mirror Frame Console'
-              ]
-          ],
-          'mandir' => [
-              'name' => 'Pooja Mandirs',
-              'folder' => 'assets/img/temple/',
-              'images' => [
-                  '08-Feet-Home-Temple-Design-2.webp' => 'Palatial Home Mandir',
-                  '2026-Hindu-Puja-Mandir-Design-for-home.webp' => 'Gilded Teakwood Devalayam'
-              ]
-          ],
-          'door' => [
-              'name' => 'Designer Doors',
-              'folder' => 'assets/img/door_Design/',
-              'images' => [
-                  'Cut-Work-Style-Door-Design.webp' => 'Cut-Work Designer Door',
-                  'Solid-Wood-Classical-Door-Design.webp' => 'Grand Classical Teak Door'
-              ]
-          ],
-          'partition' => [
-              'name' => 'Partitions',
-              'folder' => 'assets/img/partition_and_decorative/',
-              'images' => [
-                  'Classic-Room-Separator-in-Sheesham-Wood-PART-0092-jpg.webp' => 'Classic Rajwada Partition',
-                  'Carved-Grapes-Pattern-Room-Divider-UH-PART-0084-jpg.webp' => 'Carved Grapes Room Divider'
-              ]
-          ],
-          'guruji' => [
-              'name' => 'Guruji Gaddi',
-              'folder' => 'assets/img/gurujichair/',
-              'images' => [
-                  'Aesthetic-Lion-Faced-Guru-Ji-Chair-1.webp' => 'Lion-Faced Satsang Gaddi',
-                  'Crafted-Royal-Chair-for-Guruji-Gaddi-Design-1-1.webp' => 'Royal Satsang Singhasan'
-              ]
-          ],
-          'office' => [
-              'name' => 'Office Furniture',
-              'folder' => 'assets/img/Office_furniture/',
-              'images' => [
-                  'Chairmans-Luxurious-Office-Furniture-2-scaled.webp' => 'Chairmans Luxurious Workspace',
-                  'Designer-Office-Workspace-Furniture-2-scaled.webp' => 'Designer Workspace Ensemble'
-              ]
-          ],
-          'study' => [
-              'name' => 'Study Tables',
-              'folder' => 'assets/img/Office_furniture/',
-              'images' => [
-                  'Smart-Corporate-Workspace-Furniture-2-scaled.webp' => 'Regal Carved Study Table',
-                  'Upgrade-Your-Office-with-Stylish-Hand-carved-Furniture-1-scaled.webp' => 'Executive Hand-Carved Desk'
-              ]
-          ]
-      ];
+      // Fetch products for featured masterpieces
+      try {
+          $stmt = $pdo->query("
+              SELECT p.*, c.name as category_name, c.slug as category_slug,
+                     (SELECT image_path FROM product_images WHERE product_id = p.id ORDER BY is_primary DESC LIMIT 1) as primary_image
+              FROM products p
+              JOIN categories c ON p.category_id = c.id
+              ORDER BY p.created_at DESC LIMIT 12
+          ");
+          $featured_products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+      } catch (PDOException $e) {
+          $featured_products = [];
+      }
+      
+      // Get unique categories from featured products for filters
+      $featured_cats = [];
+      foreach ($featured_products as $fp) {
+          $featured_cats[$fp['category_slug']] = $fp['category_name'];
+      }
       ?>
       <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12 text-xs md:text-sm uppercase tracking-widest">
         <button class="material-chip active px-3 py-1.5 md:px-4 md:py-2" onclick="filterGallery('all')">All Masterpieces</button>
         <?php
-        foreach ($gallery_config as $filter => $cat) {
-            echo '<button class="material-chip px-3 py-1.5 md:px-4 md:py-2" onclick="filterGallery(\'' . htmlspecialchars($filter) . '\')">' . htmlspecialchars($cat['name']) . '</button>';
+        foreach ($featured_cats as $slug => $name) {
+            echo '<button class="material-chip px-3 py-1.5 md:px-4 md:py-2" onclick="filterGallery(\'' . htmlspecialchars($slug) . '\')">' . htmlspecialchars($name) . '</button>';
         }
         ?>
       </div>
  
       <!-- Gallery Grid -->
       <div class="row g-4" id="galleryMasterpieces">
-        <?php
-        foreach ($gallery_config as $filter => $cat) {
-            foreach ($cat['images'] as $file => $title) {
-                $img_path = $cat['folder'] . $file;
-                ?>
+        <?php if(empty($featured_products)): ?>
+            <p class="text-center w-full text-gray-500">Products will be added soon.</p>
+        <?php else: ?>
+            <?php foreach ($featured_products as $fp): ?>
                 <!-- Dynamic Item -->
-                <div class="col-6 col-md-4 gallery-item <?php echo htmlspecialchars($filter); ?> gsap-reveal">
+                <div class="col-6 col-md-4 gallery-item <?php echo htmlspecialchars($fp['category_slug']); ?> gsap-reveal">
                   <div class="relative overflow-hidden group">
-                    <img src="<?php echo htmlspecialchars($img_path); ?>" alt="<?php echo htmlspecialchars($title); ?>" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                      <h4 class="font-heading text-lg text-luxeBlack"><?php echo htmlspecialchars($title); ?></h4>
-                      <p class="text-luxeGold text-xs tracking-wider uppercase mb-3"><?php echo htmlspecialchars($cat['name']); ?></p>
-                      <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3">Bespoke Inquiry</button>
-                    </div>
+                    <a href="product.php?slug=<?= htmlspecialchars($fp['slug']) ?>">
+                        <?php if ($fp['primary_image']): ?>
+                            <img src="<?php echo htmlspecialchars($fp['primary_image']); ?>" alt="<?php echo htmlspecialchars($fp['name']); ?>" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+                        <?php else: ?>
+                            <div style="background:#eee;" class="w-full h-52 md:h-80 object-cover transition-transform duration-700 group-hover:scale-110 flex items-center justify-center">No Image</div>
+                        <?php endif; ?>
+                        <div class="absolute inset-0 bg-white bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                          <h4 class="font-heading text-lg text-luxeBlack"><?php echo htmlspecialchars($fp['name']); ?></h4>
+                          <p class="text-luxeGold text-xs tracking-wider uppercase mb-3"><?php echo htmlspecialchars($fp['category_name']); ?></p>
+                          <button class="btn-luxury trigger-inquiry text-[10px] py-1 px-3" style="pointer-events: none;">View Details</button>
+                        </div>
+                    </a>
                   </div>
                 </div>
-                <?php
-            }
-        }
-        ?>
+            <?php endforeach; ?>
+        <?php endif; ?>
       </div> <!-- row -->
     </div> <!-- container -->
   </section> <!-- section -->

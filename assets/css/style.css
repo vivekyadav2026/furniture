@@ -454,6 +454,10 @@ a:hover {
   padding: 0.4rem 0;
   animation: fhDropIn 0.18s ease;
 }
+.fh-dropdown-right {
+  left: auto;
+  right: 0;
+}
 @keyframes fhDropIn {
   from { opacity:0; transform:translateY(-5px); }
   to   { opacity:1; transform:translateY(0); }

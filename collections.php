@@ -1,7 +1,23 @@
 <?php
+require_once 'config/db.php';
 $page_title = "All Collections | FurnishHut Royal Furniture Categories";
 $page_description = "Explore all FurnishHut collections — handcrafted beds, sofas, dining sets, chairs, mandirs, swings, mirrors, doors and more. Bespoke royal furniture for elite homes.";
 include 'header.php';
+
+$page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+$limit = 12; // Categories per page
+$offset = ($page - 1) * $limit;
+
+$total_stmt = $pdo->query("SELECT COUNT(*) FROM categories");
+$total_categories = $total_stmt->fetchColumn();
+$total_pages = ceil($total_categories / $limit);
+
+// Fetch dynamic categories
+$stmt = $pdo->prepare("SELECT * FROM categories ORDER BY name ASC LIMIT ? OFFSET ?");
+$stmt->bindValue(1, $limit, PDO::PARAM_INT);
+$stmt->bindValue(2, $offset, PDO::PARAM_INT);
+$stmt->execute();
+$categories = $stmt->fetchAll();
 ?>
 
   <!-- Page Header Banner -->
@@ -13,196 +29,56 @@ include 'header.php';
       <span class="text-[#C5A880] text-[10px] font-semibold tracking-[0.45em] uppercase block mb-4">Explore Our Craftsmanship</span>
       <h1 class="font-heading text-4xl md:text-6xl text-white mb-4">All Collections</h1>
       <div class="w-16 h-[1px] bg-[#C5A880] mx-auto mb-4"></div>
-      <p class="text-[#C5A880]/80 text-sm max-w-xl mx-auto tracking-wide font-light">15 Mastercraft Categories &middot; 100% Handmade &middot; Palace-Grade Materials</p>
+      <p class="text-[#C5A880]/80 text-sm max-w-xl mx-auto tracking-wide font-light">Mastercraft Categories &middot; 100% Handmade &middot; Palace-Grade Materials</p>
     </div>
   </section>
 
   <!-- ALL CATEGORIES SECTION -->
   <section class="py-24" style="background:#FDFBF7;">
     <div class="container mx-auto px-4 max-w-7xl">
-      <div class="row g-5">        <!-- Category 1 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="bedroom.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/bedroom_furniture/Luxury-Teak-Wood-Bed-with-Storage-scaled.webp" alt="Royal Beds" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Royal Beds</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 2 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="sofa.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/Sofa_Set_Design/10-Seater-Royal-Concept-Sofa-Set-YT-582.webp" alt="Luxury Sofa Sets" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Luxury Sofa Sets</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 3 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="dining.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/Dining_furniture/04-Seater-Royal-Dining-Table-Set-at-Factory-Price-1.webp" alt="Dining Sets" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Dining Sets</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 4 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="console.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/console_table/Baroque-Style-Console-Table-jpg.webp" alt="Console Tables" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Console Tables</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 5 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="throne.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/gurujichair/Aarsun-Guruji-chair-jpg.webp" alt="Accent Chairs" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Accent Chairs</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 6 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="#" class="card-luxury block cursor-pointer trigger-inquiry" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/console_table/Designer-Wooden-Console-B.jpg" alt="Centre Tables" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Centre Tables</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Inquire &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 7 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="swing.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/swing_design/Buy-a-strong-durable-and-long-lasting-wooden-swing.webp" alt="Royal Swings" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Royal Swings</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 8 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="mirrors.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/partition_and_decorative/Antique-Style-Room-Divider-UH-PART-0087-jpg.webp" alt="Ornate Mirrors" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Ornate Mirrors</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 9 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="mandir.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/temple/08-Feet-Home-Temple-Design-2.webp" alt="Pooja Mandirs" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Pooja Mandirs</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 11 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="doors.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/door_Design/Cut-Work-Style-Door-Design.webp" alt="Designer Doors" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Designer Doors</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 12 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="partition.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/partition_and_decorative/Carved-Grapes-Pattern-Room-Divider-UH-PART-0084-jpg.webp" alt="Partition Designs" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Partition Designs</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 13 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="guruji.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/gurujichair/Aesthetic-Lion-Faced-Guru-Ji-Chair-1.webp" alt="Guruji Chair" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Guruji Chair</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 14 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="office.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/Office_furniture/Chairmans-Luxurious-Office-Furniture-2-scaled.webp" alt="Office Furniture" class="card-luxury-img" style="height:350px; object-position:left;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Office Furniture</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Category 15 -->
-        <div class="col-6 col-md-6 col-lg-4">
-          <a href="study.php" class="card-luxury block cursor-pointer" style="text-decoration:none;">
-            <div class="card-luxury-img-wrapper">
-              <img src="assets/img/console_table/French-Style-Royal-Console-Table-CNS-0024-A-jpg.webp" alt="Study Tables" class="card-luxury-img" style="height:350px;">
-            </div>
-            <div class="p-4 flex justify-between items-center bg-white">
-              <h3 class="text-base font-heading text-luxeBlack font-bold">Study Tables</h3>
-              <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
-            </div>
-          </a>
-        </div>
-
+      <div class="row g-5">
+        <?php if(empty($categories)): ?>
+            <p class="text-center w-full text-gray-500">Categories will be added soon.</p>
+        <?php else: ?>
+            <?php foreach($categories as $cat): ?>
+                <div class="col-6 col-md-6 col-lg-4">
+                  <a href="category.php?slug=<?= $cat['slug'] ?>" class="card-luxury block cursor-pointer" style="text-decoration:none;">
+                    <div class="card-luxury-img-wrapper">
+                      <?php if ($cat['cover_image']): ?>
+                          <img src="<?= htmlspecialchars($cat['cover_image']) ?>" alt="<?= htmlspecialchars($cat['name']) ?>" class="card-luxury-img" style="height:350px;">
+                      <?php else: ?>
+                          <div style="background:#eee; height:350px; display:flex; align-items:center; justify-content:center;">No Cover</div>
+                      <?php endif; ?>
+                    </div>
+                    <div class="p-4 flex justify-between items-center bg-white border-t border-gray-100">
+                      <h3 class="text-base font-heading text-luxeBlack font-bold m-0"><?= htmlspecialchars($cat['name']) ?></h3>
+                      <span class="text-luxeGold text-[10px] tracking-widest uppercase font-semibold">Explore &rarr;</span>
+                    </div>
+                  </a>
+                </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
       </div>
+      
+      <!-- Pagination Controls -->
+      <?php if ($total_pages > 1): ?>
+      <div class="mt-16 flex justify-center items-center gap-4">
+          <?php if ($page > 1): ?>
+              <a href="?page=<?= $page - 1 ?>" class="border border-[#C5A880] text-[#C5A880] px-4 py-2 text-xs uppercase tracking-widest hover:bg-[#C5A880] hover:text-white transition-colors">&larr; Prev</a>
+          <?php endif; ?>
+          
+          <div class="flex gap-2">
+              <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                  <a href="?page=<?= $i ?>" class="<?= $i === $page ? 'bg-[#C5A880] text-white' : 'border border-gray-200 text-gray-500 hover:border-[#C5A880] hover:text-[#C5A880]' ?> px-4 py-2 text-xs transition-colors"><?= $i ?></a>
+              <?php endfor; ?>
+          </div>
+          
+          <?php if ($page < $total_pages): ?>
+              <a href="?page=<?= $page + 1 ?>" class="border border-[#C5A880] text-[#C5A880] px-4 py-2 text-xs uppercase tracking-widest hover:bg-[#C5A880] hover:text-white transition-colors">Next &rarr;</a>
+          <?php endif; ?>
+      </div>
+      <?php endif; ?>
+      
     </div>
   </section>
 
