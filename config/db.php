@@ -1,8 +1,13 @@
 <?php
+// $host = 'localhost';
+// $dbname = 'furniture_db';
+// $username = 'root';
+// $password = ''; // Default XAMPP password is empty
+
 $host = 'localhost';
-$dbname = 'furniture_db';
-$username = 'root';
-$password = ''; // Default XAMPP password is empty
+$dbname = 'u798623491_furnishdb';
+$username = 'u798623491_furnish';
+$password = 'Furnishdb@2026$%'; // Default XAMPP password is empty
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
